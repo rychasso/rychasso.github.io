@@ -1,0 +1,12 @@
+$baseFontSizePx: 16;
+
+/* Set provided size in Px to value in Rem. Used $baseFontSizePx just for calculation of Rem value */
+@mixin setFontSize($sizePx, $sizeMobilePx: 0) {
+  font-size: #{$sizePx/$baseFontSizePx}rem;
+
+  @if ($sizeMobilePx != 0) {
+    @media all and (max-width: 768px) {
+      font-size: #{$sizeMobilePx/$baseFontSizePx}rem;
+    }
+  }
+}
