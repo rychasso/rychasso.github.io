@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "rychasso-me"
+  "defaultProject": "rychasso-me",
+  "cli": {
+    "analytics": false
+  }
 }
