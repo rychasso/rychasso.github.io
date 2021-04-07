@@ -1,8 +1,5 @@
-<ul>
-  <li *ngFor="let illustration of illustrations$ | async">
-    <figure>
-      <img [src]=illustration.src alt="">
-      <figcaption>{{illustration.title}}</figcaption>
-    </figure>
+<ul class="grid">
+  <li *ngFor="let illustration of illustrations$ | async" class="grid-item">
+    <app-illustration-list-item class="grid-item-content" [illustration]="illustration"></app-illustration-list-item>
   </li>
 </ul>

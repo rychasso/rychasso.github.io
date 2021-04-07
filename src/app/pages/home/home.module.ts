@@ -4,11 +4,12 @@ import { HomeComponent } from './home/home.component';
 import {RouterModule} from '@angular/router';
 import {routes} from './home.routes';
 import {HomeIllustrationsResolver} from './home-illustrations.resolver';
+import { IllustrationListItemComponent } from './illustration-list-item/illustration-list-item.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, IllustrationListItemComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
