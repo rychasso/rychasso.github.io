@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {map} from 'rxjs/operators';
 import {Observable} from 'rxjs';
-import {IIllustration} from '@models/Illustration';
+import {IProject} from '@models/Project';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,7 @@ import {IIllustration} from '@models/Illustration';
 })
 export class HomeComponent implements OnInit {
 
-  public readonly illustrations$: Observable<IIllustration[]> = this.route.data.pipe(map(d => d.illustrations));
+  public readonly project$: Observable<IProject[]> = this.route.data.pipe(map(d => d.projects));
 
   constructor(
     private route: ActivatedRoute,

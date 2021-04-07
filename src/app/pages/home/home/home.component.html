@@ -1,5 +1,7 @@
 <ul class="grid">
-  <li *ngFor="let illustration of illustrations$ | async" class="grid-item">
-    <app-illustration-list-item class="grid-item-content" [illustration]="illustration"></app-illustration-list-item>
+  <li *ngFor="let project of project$ | async" class="grid-item">
+    <a [routerLink]="['projects', project.id ]">
+      <app-project-list-item class="grid-item-content" [project]="project"></app-project-list-item>
+    </a>
   </li>
 </ul>
