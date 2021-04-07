@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let illustration of illustrations$ | async">
+    <figure>
+      <img [src]=illustration.src alt="">
+      <figcaption>{{illustration.title}}</figcaption>
+    </figure>
+  </li>
+</ul>

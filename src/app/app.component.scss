@@ -1,0 +1,33 @@
+:host {
+  display: grid;
+  grid-template-areas:
+    "header main"
+    "nav main"
+    "footer main";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  padding: 0.5rem;
+}
+
+
+nav {
+  grid-area: nav;
+  padding: 0.5rem;
+}
+
+
+footer {
+  grid-area: footer;
+  padding: 0.5rem;
+}
+
+main {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
