@@ -1,12 +1,25 @@
+@import "grid";
+
 :host {
   display: grid;
   grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+
+  @include isMoreThan('mobile') {
+    grid-template-areas:
     "header main"
     "nav main"
     "footer main";
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 300px 1fr;
-  height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 300px 1fr;
+    height: 100vh;
+  }
+
 }
 
 header {
