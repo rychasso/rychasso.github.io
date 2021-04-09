@@ -1,3 +1,12 @@
-<div class="backdrop" [style.backgroundImage]="'url(' + project.src + ')'"></div>
+<section>
+  <div class="image-backdrop-desktop"  [style.backgroundImage]="'url(' + project.src + ')'"></div>
+  <img class="image-backdrop-mobile" [src]="project.src" alt="" />
 
-<img [src]="project.src" alt="" />
+  <div class="content">
+    <h3 class="h4">{{project.title}}</h3>
+  </div>
+</section>
+
+
+
+
