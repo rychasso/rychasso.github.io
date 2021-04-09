@@ -1,3 +1,11 @@
-<ng-container *ngIf="project$ | async as project">
-  <img [src]="project.src" alt="" />
-</ng-container>
+<section *ngIf="project$ | async as project">
+  <header>
+    <h1 class="h1">{{project.title}}</h1>
+  </header>
+  <div class="content">
+    <article>
+      <img [src]="project.src" alt="" />
+      <p *ngIf="project.description">{{project.description}}</p>
+    </article>
+  </div>
+</section>

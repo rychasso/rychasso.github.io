@@ -8,8 +8,8 @@
     "nav"
     "main"
     "footer";
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
 
   @include isMoreThan("mobile") {
     grid-template-areas:
@@ -17,7 +17,7 @@
       "nav main"
       "footer main";
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: $layoutNavWidth 1fr;
     height: 100vh;
   }
 }

@@ -1,3 +1,49 @@
-img {
-  width: 100%;
+@import "grid";
+@import "variables";
+
+section {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+  ;
+  grid-gap: $layoutElementsGutter;
+}
+
+header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+
+article {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "image-description"
+  ;
+  grid-gap: $layoutElementsGutter;
+
+  &:not(:last-child) {
+    margin-bottom: $layoutElementsGutter;
+  }
+
+  @include isMoreThan("mobile") {
+    grid-template-areas:
+      "image image-description"
+    ;
+    grid-template-columns: minmax(auto, 750px) $layoutNavWidth;
+  }
+
+  img {
+    grid-area: image;
+  }
+
+  p {
+    grid-area: image-description;
+  }
+
 }

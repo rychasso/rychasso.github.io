@@ -6,6 +6,7 @@ export const PROJECTS: IProject[] = [
     title: 'City',
     src:
       'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/153642615_291742945618196_7585843345489804431_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=rs4kFuyxPN8AX8IgNhQ&edm=AP_V10EAAAAA&ccb=7-4&oh=45a7730a3aa209fa6f2b9603335fd760&oe=6092EB11&_nc_sid=4f375e',
+    description: 'lorem',
   },
   {
     id: 'mona-lisa',
