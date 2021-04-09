@@ -44,6 +44,10 @@ nav {
   li {
     margin-bottom: $layoutElementsGutter;
   }
+
+  a.active-menu-link {
+    font-weight: 400;
+  }
 }
 
 footer {
