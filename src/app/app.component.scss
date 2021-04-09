@@ -28,6 +28,7 @@ header {
   padding: $layoutElementsGutter;
 
   a {
+    font-size: 1.75rem;
     font-weight: 600;
     line-height: 1.25;
     text-transform: uppercase;
@@ -37,8 +38,9 @@ header {
 nav {
   grid-area: nav;
   padding: $layoutElementsGutter;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 200;
+
   li {
     margin-bottom: $layoutElementsGutter;
   }
@@ -68,4 +70,26 @@ main {
   grid-area: main;
   overflow-y: auto;
   padding: $layoutElementsGutter;
+}
+
+a {
+  span {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      border-bottom: 1px solid var(--link-hover-border-color);
+      transition: width 0.25s;
+    }
+  }
+
+  &:hover {
+    span:after {
+      width: 100%;
+    }
+  }
 }

@@ -3,8 +3,8 @@
 </header>
 <nav>
   <ul>
-    <li><a routerLink="/">Мои работы</a></li>
-    <li><a routerLink="/about">Обо мне</a></li>
+    <li><a routerLink="/"><span>Мои работы</span></a></li>
+    <li><a routerLink="/about"><span>Обо мне</span></a></li>
   </ul>
 </nav>
 <main>
@@ -15,7 +15,7 @@
     <li *ngFor="let socialLink of socialLinks">
       <a [href]=[socialLink.href] target="_blank">
         <app-icon [name]="socialLink.iconName" class="social-link-icon"></app-icon>
-        {{socialLink.label}}
+        <span>{{socialLink.label}}</span>
       </a>
     </li>
   </ul>
