@@ -10,16 +10,15 @@
   grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr;
 
-  @include isMoreThan('mobile') {
+  @include isMoreThan("mobile") {
     grid-template-areas:
-    "header main"
-    "nav main"
-    "footer main";
+      "header main"
+      "nav main"
+      "footer main";
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 300px 1fr;
     height: 100vh;
   }
-
 }
 
 header {
@@ -27,12 +26,10 @@ header {
   padding: 0.5rem;
 }
 
-
 nav {
   grid-area: nav;
   padding: 0.5rem;
 }
-
 
 footer {
   grid-area: footer;

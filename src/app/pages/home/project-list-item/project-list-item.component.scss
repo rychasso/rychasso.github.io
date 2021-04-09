@@ -7,7 +7,7 @@
 .backdrop {
   display: none;
 
-  @include isMoreThan('mobile') {
+  @include isMoreThan("mobile") {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 img {
   display: block;
 
-  @include isMoreThan('mobile') {
+  @include isMoreThan("mobile") {
     display: none;
   }
 }

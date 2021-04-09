@@ -1,17 +1,12 @@
 import { Injectable } from '@angular/core';
-import {
-  Resolve,
-  RouterStateSnapshot,
-  ActivatedRouteSnapshot, Router
-} from '@angular/router';
+import { Resolve, RouterStateSnapshot, ActivatedRouteSnapshot, Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { PROJECTS} from 'src/app/DB';
-import {IProject} from '@models/Project';
+import { PROJECTS } from 'src/app/DB';
+import { IProject } from '@models/Project';
 
 @Injectable()
 export class ProjectResolver implements Resolve<IProject | null> {
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<IProject | null> {
     const { id } = route.params;
@@ -20,7 +15,7 @@ export class ProjectResolver implements Resolve<IProject | null> {
     console.log({
       id,
       PROJECTS,
-      targetProject
+      targetProject,
     });
 
     if (!targetProject) {

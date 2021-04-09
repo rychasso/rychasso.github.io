@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {IProject} from '@models/Project';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { IProject } from '@models/Project';
 
 @Component({
   selector: 'app-project-list-item',
@@ -8,12 +8,9 @@ import {IProject} from '@models/Project';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectListItemComponent implements OnInit {
-
   @Input() project!: IProject;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

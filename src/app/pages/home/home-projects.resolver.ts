@@ -1,12 +1,8 @@
 import { Injectable } from '@angular/core';
-import {
-  Resolve,
-  RouterStateSnapshot,
-  ActivatedRouteSnapshot
-} from '@angular/router';
+import { Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import {PROJECTS} from 'src/app/DB';
-import {IProject} from '@models/Project';
+import { PROJECTS } from 'src/app/DB';
+import { IProject } from '@models/Project';
 
 @Injectable()
 export class HomeProjectsResolver implements Resolve<IProject[]> {

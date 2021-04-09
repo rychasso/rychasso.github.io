@@ -1,9 +1,9 @@
 $breakpoints: (
-  mobile: 720
+  mobile: 720,
 );
 
 @mixin isMoreThan($breakpoint) {
   @media all and (min-width: #{map-get($breakpoints, $breakpoint)}px) {
-    @content
+    @content;
   }
 }
