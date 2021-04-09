@@ -1,9 +1,10 @@
 @import "grid";
+@import "variables";
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: $layoutElementsGutter;
 
   @include isMoreThan("mobile") {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

@@ -1,4 +1,5 @@
 @import "grid";
+@import "variables";
 
 :host {
   display: grid;
@@ -23,21 +24,21 @@
 
 header {
   grid-area: header;
-  padding: 0.5rem;
+  padding: $layoutElementsGutter;
 }
 
 nav {
   grid-area: nav;
-  padding: 0.5rem;
+  padding: $layoutElementsGutter;
 }
 
 footer {
   grid-area: footer;
-  padding: 0.5rem;
+  padding: $layoutElementsGutter;
 }
 
 main {
   grid-area: main;
   overflow-y: auto;
-  padding: 0.5rem;
+  padding: $layoutElementsGutter;
 }
