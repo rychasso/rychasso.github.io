@@ -10,4 +10,13 @@
 <main>
   <router-outlet></router-outlet>
 </main>
-<footer>Footer</footer>
+<footer>
+  <ul>
+    <li *ngFor="let socialLink of socialLinks">
+      <a [href]=[socialLink.href] target="_blank">
+        <app-icon [name]="socialLink.iconName" class="social-link-icon"></app-icon>
+        {{socialLink.label}}
+      </a>
+    </li>
+  </ul>
+</footer>

@@ -38,7 +38,7 @@ nav {
   grid-area: nav;
   padding: $layoutElementsGutter;
   font-size: 1.5rem;
-
+  font-weight: 200;
   li {
     margin-bottom: $layoutElementsGutter;
   }
@@ -47,6 +47,21 @@ nav {
 footer {
   grid-area: footer;
   padding: $layoutElementsGutter;
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  .social-link-icon {
+    margin-right: 0.5em;
+  }
 }
 
 main {
