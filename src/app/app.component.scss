@@ -19,17 +19,29 @@
     grid-template-rows: auto 1fr auto;
     grid-template-columns: $layoutNavWidth 1fr;
     height: 100vh;
+    padding: 0.5rem;
   }
 }
 
 header {
   grid-area: header;
   padding: $layoutElementsGutter;
+
+  a {
+    font-weight: 600;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
 }
 
 nav {
   grid-area: nav;
   padding: $layoutElementsGutter;
+  font-size: 1.5rem;
+
+  li {
+    margin-bottom: $layoutElementsGutter;
+  }
 }
 
 footer {
