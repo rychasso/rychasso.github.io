@@ -1,7 +1,17 @@
-h1, h2, p {
+h1, h2, p, ul {
   padding-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 p {
   max-width: 40em;
+}
+
+strong {
+  font-weight: 600;
 }
