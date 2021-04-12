@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { IProject } from '@models/Project';
+import { PageMetaService } from '@services/page-meta.service';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,10 @@ import { IProject } from '@models/Project';
 export class HomeComponent implements OnInit {
   public readonly project$: Observable<IProject[]> = this.route.data.pipe(map((d) => d.projects));
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private pageMetaService: PageMetaService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.pageMetaService.setTitle('Портфолио | Алёна Рычагова');
+    this.pageMetaService.setDescription('Ознакомьтесь со списком моих работ');
+  }
 }
