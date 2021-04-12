@@ -18,12 +18,17 @@ export class AppComponent {
 
   public readonly socialLinks: ISocialLink[] = [
     {
-      label: 'rychasso',
+      label: 'instagram',
       iconName: 'instagram',
       href: environment.INSTAGRAM,
     },
     {
-      label: 'rychasso',
+      label: 'behance',
+      iconName: 'behance',
+      href: environment.BEHANCE,
+    },
+    {
+      label: 'telegram',
       iconName: 'telegram',
       href: environment.TELEGRAM,
     },
