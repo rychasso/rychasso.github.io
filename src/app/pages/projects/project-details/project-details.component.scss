@@ -15,12 +15,12 @@ header {
   margin-bottom: 0.5rem;
 }
 
-.content {
+article {
   grid-area: content;
 }
 
 
-article {
+figure {
   display: grid;
   grid-template-areas:
     "image"
@@ -43,7 +43,7 @@ article {
     grid-area: image;
   }
 
-  p {
+  figcaption {
     grid-area: image-description;
   }
 

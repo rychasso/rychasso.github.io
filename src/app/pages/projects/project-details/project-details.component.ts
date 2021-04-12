@@ -20,8 +20,7 @@ export class ProjectDetailsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subscription = this.project$.subscribe((project) => {
       this.pageMetaService.setTitle(`${project.title} | Алёна Рычагова`);
-      this.pageMetaService.setDescription(project.description || null);
-      this.pageMetaService.setImage(project.src);
+      this.pageMetaService.setImage(project.figures[0]?.src || '');
     });
   }
 

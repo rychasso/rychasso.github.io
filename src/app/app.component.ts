@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { environment } from '@env';
-import { TIcon } from './modules/icon';
+import { TIcon } from '@modules/icon';
 
 interface ISocialLink {
   label: string;

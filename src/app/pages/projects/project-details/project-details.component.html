@@ -2,10 +2,10 @@
   <header>
     <h1 class="h1">{{project.title}}</h1>
   </header>
-  <div class="content">
-    <article>
-      <img [src]="project.src" alt="" />
-      <p *ngIf="project.description">{{project.description}}</p>
-    </article>
-  </div>
+  <article class="content">
+    <figure *ngFor="let figure of project.figures">
+      <img [src]="figure.src" alt="" />
+      <figcaption *ngIf="figure.description">{{figure.description}}</figcaption>
+    </figure>
+  </article>
 </section>

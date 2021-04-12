@@ -5,10 +5,11 @@ import { RouterModule } from '@angular/router';
 import { routes } from './home.routes';
 import { HomeProjectsResolver } from './home-projects.resolver';
 import { ProjectListItemComponent } from './project-list-item/project-list-item.component';
+import { IconModule } from '@modules/icon';
 
 @NgModule({
   declarations: [HomeComponent, ProjectListItemComponent],
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, RouterModule.forChild(routes), IconModule],
   providers: [HomeProjectsResolver],
 })
 export class HomeModule {}
