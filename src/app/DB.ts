@@ -1,4 +1,4 @@
-import { IProject } from '@models/Project';
+import { EProjectTag, IProject } from '@models/Project';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -8,6 +8,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Family-Christmas',
     title: 'Новый год',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Family-Christmas/1.jpg'),
@@ -23,6 +24,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Misha-The-President',
     title: 'Президент Миша',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Misha-The-President/1.jpg'),
@@ -32,6 +34,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Girl-With-Peaches',
     title: 'Девочка с персиками',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Girl-With-Peaches/1.jpg'),
@@ -41,6 +44,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Mona-Lisa',
     title: 'Мона Лиза',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Mona-Lisa/1.jpg'),
@@ -50,6 +54,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Frida-Kahlo',
     title: 'Голубка Фрида',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Frida-Kahlo/1.jpg'),
@@ -59,6 +64,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Upside-Down-Magazine',
     title: 'Весенний номер',
+    tags: [EProjectTag.illustration],
     description: 'Обложка для второго номера журнала «Вверх тормашками»',
     figures: [
       {
@@ -72,6 +78,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Spring-Animals',
     title: 'Рассвет весны',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Spring-Animals/1.jpg'),
@@ -90,6 +97,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Vasily-The-Cat',
     title: 'Один день из жизни Василия',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Vasily-The-Cat/6.jpg'),
@@ -114,6 +122,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Winter-Street',
     title: 'Новогодняя улица',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Winter-Street/1.jpg'),
@@ -123,6 +132,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Ice-Cream-Village',
     title: 'В деревне Мороженово',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Ice-Cream-Village/1.jpg'),
@@ -132,6 +142,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Arctic-Nature',
     title: 'Об охране природы Арктики',
+    tags: [EProjectTag.illustration],
     figures: [
       {
         src: getPath('Arctic-Nature/1.jpg'),
@@ -141,6 +152,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Lolita-Grandma',
     title: 'Бабушка Лолита',
+    tags: [EProjectTag.character],
     figures: [
       {
         src: getPath('Lolita-Grandma/1.jpg'),
@@ -156,6 +168,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Pizzeria-The-Bo',
     title: 'Мистер Бо',
+    tags: [EProjectTag.character],
     figures: [
       {
         src: getPath('Pizzeria-The-Bo/1.jpg'),
@@ -177,6 +190,7 @@ export const PROJECTS: IProject[] = [
   {
     id: 'Zoya',
     title: 'Садовница Зоя',
+    tags: [EProjectTag.character],
     figures: [
       {
         src: getPath('Zoya/1.jpg'),

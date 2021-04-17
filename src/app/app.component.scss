@@ -38,11 +38,21 @@ header {
 nav {
   grid-area: nav;
   padding: $layoutElementsGutter;
-  font-size: 1.25rem;
   font-weight: 200;
 
-  li {
-    margin-bottom: $layoutElementsGutter;
+  .menu {
+    & > li {
+      font-size: 1.25rem;
+      margin-bottom: $layoutElementsGutter;
+    }
+  }
+
+  .submenu {
+    padding-left: $layoutElementsGutter;
+    font-size: 1rem;
+    & > li {
+      margin-top: $layoutElementsGutter / 2;
+    }
   }
 
   a.active-menu-link {

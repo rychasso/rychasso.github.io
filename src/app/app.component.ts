@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
 import { environment } from '@env';
 import { TIcon } from '@modules/icon';
+import { EProjectTag } from '@models/Project';
 
 interface ISocialLink {
   label: string;
   iconName: TIcon;
+  href: string;
+}
+
+interface ISubmenu {
+  label: string;
   href: string;
 }
 
@@ -36,6 +42,17 @@ export class AppComponent {
       label: environment.EMAIL,
       iconName: 'email',
       href: `mailto:${environment.EMAIL}`,
+    },
+  ];
+
+  public readonly submenuItems: ISubmenu[] = [
+    {
+      label: 'Персонажи',
+      href: `/tags/${EProjectTag.character}`,
+    },
+    {
+      label: 'Иллюстрации',
+      href: `/tags/${EProjectTag.illustration}`,
     },
   ];
 }
