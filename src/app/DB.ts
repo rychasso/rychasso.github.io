@@ -163,6 +163,21 @@ export const PROJECTS: IProject[] = [
       {
         src: getPath('Lolita-Grandma/3.jpg'),
       },
+      {
+        src: getPath('Lolita-Grandma/4.jpg'),
+      },
+      {
+        src: getPath('Lolita-Grandma/5.jpg'),
+      },
+      {
+        src: getPath('Lolita-Grandma/6.jpg'),
+      },
+      {
+        src: getPath('Lolita-Grandma/7.jpg'),
+      },
+      {
+        src: getPath('Lolita-Grandma/8.jpg'),
+      },
     ],
   },
   {
