@@ -1,6 +1,11 @@
 @import "grid";
 @import "variables";
 
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 section {
   display: grid;
   grid-template-areas:
