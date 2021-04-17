@@ -7,7 +7,7 @@ function getPath(relativePath: string): string {
 export const PROJECTS: IProject[] = [
   {
     id: 'Family-Christmas',
-    title: 'Новый год',
+    title: 'Новогодние хлопоты',
     tags: [EProjectTag.illustration],
     figures: [
       {
