@@ -1,5 +1,18 @@
-h1, h2, p, ul {
-  padding-bottom: 1em;
+@import "variables";
+
+p, ul {
+  margin-bottom: 1em;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 li {
@@ -9,9 +22,29 @@ li {
 }
 
 p {
-  max-width: 40em;
+  line-height: 1.5;
 }
 
 strong {
   font-weight: 600;
+}
+
+
+.about-me-row {
+  display: grid;
+  grid-template-areas:
+    "photo"
+    "text"
+  ;
+  grid-gap: $layoutElementsGutter;
+  max-width: 40rem;
+}
+
+.about-me-photo-col {
+  grid-area: photo;
+
+}
+
+.about-me-content-col {
+  grid-area: text;
 }
