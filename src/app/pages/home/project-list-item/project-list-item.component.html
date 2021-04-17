@@ -1,10 +1,10 @@
 <section>
-  <div class="image-backdrop-desktop"  [style.backgroundImage]="'url(' + project.figures[0]?.thumbnailSrc + ')'"></div>
-  <img class="image-backdrop-mobile" [src]="project.figures[0]?.thumbnailSrc" alt="" />
+  <div class="image-backdrop-desktop"  [style.backgroundImage]="'url(' + project.figures[0]?.src + ')'"></div>
+  <img class="image-backdrop-mobile" [src]="project.figures[0]?.src" alt="" />
 
   <div class="content">
-    <h3 class="h4">{{project.title}}</h3>
-    <p *ngIf="project.figures.length > 1"><small>Коллекция ({{project.figures.length}} шт.)</small></p>
+    <h3>{{project.title}}</h3>
+    <p *ngIf="project.figures.length > 1">{{project.figures.length}} шт.</p>
   </div>
 </section>
 

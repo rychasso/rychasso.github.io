@@ -12,7 +12,12 @@ section {
 
 header {
   grid-area: header;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+
+  p {
+    margin-top: 1.5rem;
+    font-size: 1.15rem;
+  }
 }
 
 article {

@@ -1,58 +1,188 @@
 import { IProject } from '@models/Project';
 
+function getPath(relativePath: string): string {
+  return `/assets/projects/${relativePath}`;
+}
+
 export const PROJECTS: IProject[] = [
   {
-    id: 'city',
-    title: 'City',
+    id: 'Family-Christmas',
+    title: 'Новый год',
     figures: [
       {
-        thumbnailSrc:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/153642615_291742945618196_7585843345489804431_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=rs4kFuyxPN8AX8IgNhQ&edm=AP_V10EAAAAA&ccb=7-4&oh=45a7730a3aa209fa6f2b9603335fd760&oe=6092EB11&_nc_sid=4f375e',
-        src:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/153642615_291742945618196_7585843345489804431_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=rs4kFuyxPN8AX8IgNhQ&edm=AP_V10EAAAAA&ccb=7-4&oh=45a7730a3aa209fa6f2b9603335fd760&oe=6092EB11&_nc_sid=4f375e',
-        description: 'lorem',
+        src: getPath('Family-Christmas/1.jpg'),
+      },
+      {
+        src: getPath('Family-Christmas/2.jpg'),
+      },
+      {
+        src: getPath('Family-Christmas/3.jpg'),
       },
     ],
   },
   {
-    id: 'mona-lisa',
-    title: 'Mona Lisa',
+    id: 'Misha-The-President',
+    title: 'Президент Миша',
     figures: [
       {
-        thumbnailSrc:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/159041796_1580181928846310_8475464537602959739_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=hnhfNv-d7W8AX87XYuQ&edm=AP_V10EAAAAA&ccb=7-4&oh=cdfb6a1ebc2a78e4877968ea2e071560&oe=6091107C&_nc_sid=4f375e',
-        src:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/159041796_1580181928846310_8475464537602959739_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=hnhfNv-d7W8AX87XYuQ&edm=AP_V10EAAAAA&ccb=7-4&oh=cdfb6a1ebc2a78e4877968ea2e071560&oe=6091107C&_nc_sid=4f375e',
+        src: getPath('Misha-The-President/1.jpg'),
       },
     ],
   },
   {
-    id: 'mona-lisa-multi',
-    title: 'Mona Lisa multi',
+    id: 'Girl-With-Peaches',
+    title: 'Девочка с персиками',
     figures: [
       {
-        thumbnailSrc:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/159041796_1580181928846310_8475464537602959739_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=hnhfNv-d7W8AX87XYuQ&edm=AP_V10EAAAAA&ccb=7-4&oh=cdfb6a1ebc2a78e4877968ea2e071560&oe=6091107C&_nc_sid=4f375e',
-
-        src:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/159041796_1580181928846310_8475464537602959739_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=hnhfNv-d7W8AX87XYuQ&edm=AP_V10EAAAAA&ccb=7-4&oh=cdfb6a1ebc2a78e4877968ea2e071560&oe=6091107C&_nc_sid=4f375e',
-        description: '1',
+        src: getPath('Girl-With-Peaches/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Mona-Lisa',
+    title: 'Мона Лиза',
+    figures: [
+      {
+        src: getPath('Mona-Lisa/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Frida-Kahlo',
+    title: 'Голубка Фрида',
+    figures: [
+      {
+        src: getPath('Frida-Kahlo/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Upside-Down-Magazine',
+    title: 'Весенний номер',
+    description: 'Обложка для второго номера журнала «Вверх тормашками»',
+    figures: [
+      {
+        src: getPath('Upside-Down-Magazine/1.jpg'),
       },
       {
-        thumbnailSrc:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/159041796_1580181928846310_8475464537602959739_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=hnhfNv-d7W8AX87XYuQ&edm=AP_V10EAAAAA&ccb=7-4&oh=cdfb6a1ebc2a78e4877968ea2e071560&oe=6091107C&_nc_sid=4f375e',
-
-        src:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/159041796_1580181928846310_8475464537602959739_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=hnhfNv-d7W8AX87XYuQ&edm=AP_V10EAAAAA&ccb=7-4&oh=cdfb6a1ebc2a78e4877968ea2e071560&oe=6091107C&_nc_sid=4f375e',
-        description: '2',
+        src: getPath('Upside-Down-Magazine/2.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Spring-Animals',
+    title: 'Рассвет весны',
+    figures: [
+      {
+        src: getPath('Spring-Animals/1.jpg'),
       },
       {
-        thumbnailSrc:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/159041796_1580181928846310_8475464537602959739_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=hnhfNv-d7W8AX87XYuQ&edm=AP_V10EAAAAA&ccb=7-4&oh=cdfb6a1ebc2a78e4877968ea2e071560&oe=6091107C&_nc_sid=4f375e',
-
-        src:
-          'https://instagram.fhel6-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/159041796_1580181928846310_8475464537602959739_n.jpg?tp=1&_nc_ht=instagram.fhel6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=hnhfNv-d7W8AX87XYuQ&edm=AP_V10EAAAAA&ccb=7-4&oh=cdfb6a1ebc2a78e4877968ea2e071560&oe=6091107C&_nc_sid=4f375e',
-        description: '3',
+        src: getPath('Spring-Animals/2.jpg'),
+      },
+      {
+        src: getPath('Spring-Animals/3.jpg'),
+      },
+      {
+        src: getPath('Spring-Animals/4.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Vasily-The-Cat',
+    title: 'Один день из жизни Василия',
+    figures: [
+      {
+        src: getPath('Vasily-The-Cat/6.jpg'),
+      },
+      {
+        src: getPath('Vasily-The-Cat/1.jpg'),
+      },
+      {
+        src: getPath('Vasily-The-Cat/2.jpg'),
+      },
+      {
+        src: getPath('Vasily-The-Cat/3.jpg'),
+      },
+      {
+        src: getPath('Vasily-The-Cat/4.jpg'),
+      },
+      {
+        src: getPath('Vasily-The-Cat/5.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Winter-Street',
+    title: 'Новогодняя улица',
+    figures: [
+      {
+        src: getPath('Winter-Street/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Ice-Cream-Village',
+    title: 'В деревне Мороженово',
+    figures: [
+      {
+        src: getPath('Ice-Cream-Village/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Arctic-Nature',
+    title: 'Об охране природы Арктики',
+    figures: [
+      {
+        src: getPath('Arctic-Nature/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Lolita-Grandma',
+    title: 'Бабушка Лолита',
+    figures: [
+      {
+        src: getPath('Lolita-Grandma/1.jpg'),
+      },
+      {
+        src: getPath('Lolita-Grandma/2.jpg'),
+      },
+      {
+        src: getPath('Lolita-Grandma/3.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Pizzeria-The-Bo',
+    title: 'Мистер Бо',
+    figures: [
+      {
+        src: getPath('Pizzeria-The-Bo/1.jpg'),
+      },
+      {
+        src: getPath('Pizzeria-The-Bo/2.jpg'),
+      },
+      {
+        src: getPath('Pizzeria-The-Bo/3.jpg'),
+      },
+      {
+        src: getPath('Pizzeria-The-Bo/4.jpg'),
+      },
+      {
+        src: getPath('Pizzeria-The-Bo/5.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Zoya',
+    title: 'Садовница Зоя',
+    figures: [
+      {
+        src: getPath('Zoya/1.jpg'),
+      },
+      {
+        src: getPath('Zoya/2.jpg'),
       },
     ],
   },

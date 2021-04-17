@@ -4,6 +4,8 @@ section {
   height: 100%;
   position: relative;
   overflow: hidden;
+  //border: 1px solid #e0d1b0;
+  box-shadow: 4px 3px 10px 0 #e2e2e6;
 
   @include isMoreThan("mobile") {
     height: 0;
@@ -44,7 +46,18 @@ section {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0.5rem;
-  background: rgba(0, 0, 0, 0.25);
-  color: white;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    font-size: inherit;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
 }
