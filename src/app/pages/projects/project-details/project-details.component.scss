@@ -19,9 +19,18 @@ header {
   grid-area: header;
   margin-bottom: 1rem;
 
-  p {
+  .description {
     margin-top: 1.5rem;
     font-size: 1.15rem;
+    max-width: 750px;
+
+    ::ng-deep p {
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 

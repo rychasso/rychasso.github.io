@@ -2,7 +2,7 @@
   <header>
     <h1 class="h1">{{project.title}}</h1>
 
-    <p *ngIf="project.description">{{project.description}}</p>
+    <div *ngIf="project.description" class="description" [innerHTML]="project.description"></div>
   </header>
   <article class="content">
     <figure *ngFor="let figure of project.figures">

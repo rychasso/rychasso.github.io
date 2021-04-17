@@ -12,12 +12,6 @@ export class ProjectResolver implements Resolve<IProject | null> {
     const { id } = route.params;
     const targetProject = PROJECTS.find((project) => project.id === id);
 
-    console.log({
-      id,
-      PROJECTS,
-      targetProject,
-    });
-
     if (!targetProject) {
       this.router.navigateByUrl('/');
       return of(null);
