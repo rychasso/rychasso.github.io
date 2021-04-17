@@ -14,4 +14,5 @@ export interface IProject {
   figures: IProjectFigure[];
   description?: string;
   tags?: EProjectTag[];
+  posterSrc?: string;
 }

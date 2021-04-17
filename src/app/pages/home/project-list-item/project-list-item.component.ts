@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { IProject } from '@models/Project';
 
 @Component({
@@ -7,10 +7,12 @@ import { IProject } from '@models/Project';
   styleUrls: ['./project-list-item.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectListItemComponent implements OnInit {
+export class ProjectListItemComponent {
   @Input() project!: IProject;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  get posterUrl(): string | null {
+    return this.project.posterSrc || this.project.figures[0]?.src || null;
+  }
 }

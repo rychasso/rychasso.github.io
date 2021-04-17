@@ -66,6 +66,7 @@ export const PROJECTS: IProject[] = [
     title: 'Весенний номер',
     tags: [EProjectTag.illustration],
     description: 'Обложка для второго номера журнала «Вверх тормашками»',
+    posterSrc: getPath('Upside-Down-Magazine/poster.jpg'),
     figures: [
       {
         src: getPath('Upside-Down-Magazine/1.jpg'),
