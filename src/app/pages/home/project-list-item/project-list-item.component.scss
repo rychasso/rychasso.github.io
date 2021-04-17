@@ -4,8 +4,7 @@ section {
   height: 100%;
   position: relative;
   overflow: hidden;
-  //border: 1px solid #e0d1b0;
-  box-shadow: 4px 3px 10px 0 #e2e2e6;
+  box-shadow: 4px 3px 10px 0 var(--project-list-item-shadow-color);
 
   @include isMoreThan("mobile") {
     height: 0;
@@ -47,7 +46,8 @@ section {
   bottom: 0;
   left: 0;
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--project-list-item-text-background);
+  color: var(--project-list-item-text-color);
   width: 100%;
   font-size: 0.65rem;
   display: flex;
