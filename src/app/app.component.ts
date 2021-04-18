@@ -47,12 +47,12 @@ export class AppComponent {
 
   public readonly submenuItems: ISubmenu[] = [
     {
-      label: 'Персонажи',
-      href: `/tags/${EProjectTag.character}`,
-    },
-    {
       label: 'Иллюстрации',
       href: `/tags/${EProjectTag.illustration}`,
+    },
+    {
+      label: 'Персонажи',
+      href: `/tags/${EProjectTag.character}`,
     },
   ];
 }

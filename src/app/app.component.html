@@ -4,7 +4,7 @@
 <nav>
   <ul class="menu">
     <li>
-      <a routerLink="/" routerLinkActive="active-menu-link" [routerLinkActiveOptions]="{exact: true}"><span>Мои работы</span></a>
+      <a routerLink="/" routerLinkActive="active-menu-link" [routerLinkActiveOptions]="{exact: true}"><span>Портфолио</span></a>
       <ul *ngIf="submenuItems.length > 0" class="submenu">
         <li *ngFor="let submenuItem of submenuItems">
           <a [routerLink]="submenuItem.href" routerLinkActive="active-menu-link"><span>{{submenuItem.label}}</span></a>
