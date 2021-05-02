@@ -60,4 +60,18 @@ section {
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+
+  .icon-container {
+    position: relative;
+    width: 2em;
+  }
+
+  .icon {
+    fill: var(--project-list-item-text-color);
+    font-size: 1.75em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

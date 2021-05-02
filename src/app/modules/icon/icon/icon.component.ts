@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { DomSanitizer } from '@angular/platform-browser';
 
-export type TIcon = 'behance' | 'instagram' | 'telegram' | 'email';
+export type TIcon = 'behance' | 'instagram' | 'images' | 'telegram' | 'email';
 
 @Component({
   selector: 'app-icon',
