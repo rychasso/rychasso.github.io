@@ -1,17 +1,28 @@
 <header>
-  <a routerLink="/" class="h1">Алёна Рычагова</a>
+  <a routerLink="/" class="h1 name"
+    >Алёна <img src="/assets/images/drawed-me.jpg" alt="" /> Рычагова</a
+  >
 </header>
 <nav>
   <ul class="menu">
     <li>
-      <a routerLink="/" routerLinkActive="active-menu-link" [routerLinkActiveOptions]="{exact: true}"><span>Портфолио</span></a>
+      <a
+        routerLink="/"
+        routerLinkActive="active-menu-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        ><span>Портфолио</span></a
+      >
       <ul *ngIf="submenuItems.length > 0" class="submenu">
         <li *ngFor="let submenuItem of submenuItems">
-          <a [routerLink]="submenuItem.href" routerLinkActive="active-menu-link"><span>{{submenuItem.label}}</span></a>
+          <a [routerLink]="submenuItem.href" routerLinkActive="active-menu-link"
+            ><span>{{ submenuItem.label }}</span></a
+          >
         </li>
       </ul>
     </li>
-    <li><a routerLink="/about" routerLinkActive="active-menu-link"><span>Обо мне</span></a></li>
+    <li>
+      <a routerLink="/about" routerLinkActive="active-menu-link"><span>Обо мне</span></a>
+    </li>
   </ul>
 </nav>
 <main>
@@ -20,9 +31,9 @@
 <footer>
   <ul>
     <li *ngFor="let socialLink of socialLinks">
-      <a [href]=[socialLink.href] target="_blank">
+      <a [href]="[socialLink.href]" target="_blank">
         <app-icon [name]="socialLink.iconName" class="social-link-icon"></app-icon>
-        <span>{{socialLink.label}}</span>
+        <span>{{ socialLink.label }}</span>
       </a>
     </li>
   </ul>

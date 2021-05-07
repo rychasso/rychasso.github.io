@@ -26,14 +26,21 @@
 header {
   grid-area: header;
   padding: $layoutElementsGutter;
+}
 
-  a {
-    line-height: 1.25;
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-family: 'Amatic SC', sans-serif;
-    letter-spacing: 0.03em;
-    font-weight: 700;
+.name {
+  line-height: 1.25;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Amatic SC", sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+
+  img {
+    display: inline;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
   }
 }
 
@@ -93,7 +100,7 @@ a {
     position: relative;
 
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       bottom: 0;
