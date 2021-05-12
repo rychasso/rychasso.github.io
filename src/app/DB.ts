@@ -6,6 +6,27 @@ function getPath(relativePath: string): string {
 
 export const PROJECTS: IProject[] = [
   {
+    id: 'Masha-And-Seeds',
+    title: 'Маша и семена',
+    tags: [EProjectTag.illustration],
+    description: '<p>Иллюстрации к сказке &laquo;Как Маша посадила семена&raquo;</p>',
+    posterSrc: getPath('Masha-And-Seeds/poster.jpg'),
+    figures: [
+      {
+        src: getPath('Masha-And-Seeds/1.jpg'),
+      },
+      {
+        src: getPath('Masha-And-Seeds/2.jpg'),
+      },
+      {
+        src: getPath('Masha-And-Seeds/3.jpg'),
+      },
+      {
+        src: getPath('Masha-And-Seeds/4.jpg'),
+      },
+    ],
+  },
+  {
     id: 'Semen-Mikhailovich-And-Vanya',
     title: 'Семён Михайлович и Ваня',
     tags: [EProjectTag.illustration],
