@@ -1,0 +1,21 @@
+a.link {
+  & > span {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      border-bottom: 1px solid var(--link-hover-border-color);
+      transition: width 0.25s;
+    }
+  }
+
+  &:hover {
+    & > span:after {
+      width: 100%;
+    }
+  }
+}

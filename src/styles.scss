@@ -2,6 +2,7 @@
 @import "theme";
 
 @import "./styles/core/typography";
+@import "./styles/components/link";
 
 /* You can add global styles to this file, and also import other style files */
 html {
@@ -24,10 +25,6 @@ a {
 
 p {
   margin: 0;
-}
-
-b {
-  font-weight: 500;
 }
 
 ul {
