@@ -6,6 +6,22 @@ function getPath(relativePath: string): string {
 
 export const PROJECTS: IProject[] = [
   {
+    id: 'Babushka-And-Ladushka',
+    title: 'Бабушка и Ладушка',
+    tags: [EProjectTag.illustration],
+    posterSrc: getPath('Babushka-And-Ladushka/poster.jpg'),
+    description:
+      '<p>Иллюстрация выполнена к стихотворению Ольги Бургановой <a class="link" href="https://www.instagram.com/city_writer_/" target="_blank" ><span><b>@city_writer_</b></span></a></p>',
+    figures: [
+      {
+        src: getPath('Babushka-And-Ladushka/1.jpg'),
+      },
+      {
+        src: getPath('Babushka-And-Ladushka/2.jpg'),
+      },
+    ],
+  },
+  {
     id: 'Masha-And-Seeds',
     title: 'Маша и семена',
     tags: [EProjectTag.illustration],
