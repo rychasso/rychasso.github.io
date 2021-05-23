@@ -6,6 +6,19 @@ function getPath(relativePath: string): string {
 
 export const PROJECTS: IProject[] = [
   {
+    id: 'Tailwind',
+    title: 'Попутный ветер',
+    tags: [EProjectTag.illustration],
+    description:
+      '<p>Иллюстрация подготовлена для детского журнала &laquo;Вверх Тормашками&raquo; по рассказу Ольги Клушиной &laquo;Попутный ветер&raquo;.</p>',
+    posterSrc: getPath('Tailwind/poster.jpg'),
+    figures: [
+      {
+        src: getPath('Tailwind/1.jpg'),
+      },
+    ],
+  },
+  {
     id: 'Storm',
     title: 'Шторм',
     tags: [EProjectTag.illustration],
