@@ -29,6 +29,7 @@ export const PROJECTS: IProject[] = [
         src: getPath('The-Miracle-Beast/work-1.jpg'),
       },
       {
+        description: 'Определение динамики, раскадровка, цвет',
         multipleSrc: [
           getPath('The-Miracle-Beast/work-2.1.jpg'),
           getPath('The-Miracle-Beast/work-2.2.jpg'),
@@ -36,12 +37,14 @@ export const PROJECTS: IProject[] = [
         ],
       },
       {
+        description: 'Подготовка экскизов',
         multipleSrc: [
           getPath('The-Miracle-Beast/work-3.1.jpg'),
           getPath('The-Miracle-Beast/work-3.2.jpg'),
         ],
       },
       {
+        description: 'Финальные работы',
         src: getPath('The-Miracle-Beast/book-1.jpg'),
       },
       {
