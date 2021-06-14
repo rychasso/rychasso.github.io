@@ -4,7 +4,78 @@ function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
 }
 
+function renderLink(href: string, content: string): string {
+  return `<a class="link" href="${href}" target="_blank" ><span><b>${content}</b></span></a>`;
+}
+
 export const PROJECTS: IProject[] = [
+  {
+    id: 'The-Miracle-Beast',
+    title: 'Чудо-Юдо',
+    tags: [EProjectTag.illustration, EProjectTag.books],
+    description: `
+      <p>Иллюстрации подготовлены по&nbsp;стихотворению &laquo;Чудо&mdash;Юдо&raquo; детского писателя Елены Бурак ${renderLink(
+        'https://www.instagram.com/burakelena/',
+        '@burakelena',
+      )}</p>
+    `,
+    posterSrc: getPath('The-Miracle-Beast/poster.jpg'),
+    figures: [
+      {
+        src: getPath('The-Miracle-Beast/book-poster.jpg'),
+      },
+      {
+        description: 'Подготовка персонажа',
+        src: getPath('The-Miracle-Beast/work-1.jpg'),
+      },
+      {
+        multipleSrc: [
+          getPath('The-Miracle-Beast/work-2.1.jpg'),
+          getPath('The-Miracle-Beast/work-2.2.jpg'),
+          getPath('The-Miracle-Beast/work-2.3.jpg'),
+        ],
+      },
+      {
+        multipleSrc: [
+          getPath('The-Miracle-Beast/work-3.1.jpg'),
+          getPath('The-Miracle-Beast/work-3.2.jpg'),
+        ],
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-1.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-2.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-3.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-4.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-5.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-6.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-7.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-8.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-9.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-10.jpg'),
+      },
+      {
+        src: getPath('The-Miracle-Beast/book-11.jpg'),
+      },
+    ],
+  },
   {
     id: 'Tailwind',
     title: 'Попутный ветер',
@@ -34,8 +105,10 @@ export const PROJECTS: IProject[] = [
     title: 'Бабушка и Ладушка',
     tags: [EProjectTag.illustration],
     posterSrc: getPath('Babushka-And-Ladushka/poster.jpg'),
-    description:
-      '<p>Иллюстрация выполнена к стихотворению Ольги Бургановой <a class="link" href="https://www.instagram.com/city_writer_/" target="_blank" ><span><b>@city_writer_</b></span></a></p>',
+    description: `<p>Иллюстрация выполнена к стихотворению Ольги Бургановой ${renderLink(
+      'https://www.instagram.com/city_writer_/',
+      '@city_writer_',
+    )}</p>`,
     figures: [
       {
         src: getPath('Babushka-And-Ladushka/1.jpg'),

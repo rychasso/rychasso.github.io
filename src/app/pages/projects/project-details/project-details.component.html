@@ -6,7 +6,10 @@
   </header>
   <article class="content">
     <figure *ngFor="let figure of project.figures">
-      <img [src]="figure.src" alt="" />
+      <img *ngIf="isFigure(figure)" [src]="figure.src" alt="" />
+      <div class="img-set" *ngIf="isFigureSet(figure)">
+        <img *ngFor="let src of figure.multipleSrc" [src]="src" alt="" />
+      </div>
       <figcaption *ngIf="figure.description">{{figure.description}}</figcaption>
     </figure>
   </article>

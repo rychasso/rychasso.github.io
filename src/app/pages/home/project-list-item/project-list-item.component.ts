@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { IProject } from '@models/Project';
+import { getProjectFirstImage, IProject } from '@models/Project';
 
 @Component({
   selector: 'app-project-list-item',
@@ -13,6 +13,10 @@ export class ProjectListItemComponent {
   constructor() {}
 
   get posterUrl(): string | null {
-    return this.project.posterSrc || this.project.figures[0]?.src || null;
+    if (this.project.posterSrc) {
+      return this.project.posterSrc;
+    }
+
+    return getProjectFirstImage(this.project) || null;
   }
 }

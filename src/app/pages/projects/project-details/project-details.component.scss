@@ -42,28 +42,43 @@ article {
 figure {
   display: grid;
   grid-template-areas:
-    "image"
     "image-description"
+    "image"
   ;
-  grid-gap: $layoutElementsGutter;
 
   &:not(:last-child) {
-    margin-bottom: $layoutElementsGutter;
+    margin-bottom: $layoutElementsGutter * 2;
   }
 
   @include isMoreThan("mobile") {
-    grid-template-areas:
-      "image image-description"
-    ;
-    grid-template-columns: minmax(auto, 750px) $layoutNavWidth;
+    grid-template-columns: minmax(auto, 1080px);
   }
 
-  img {
+  > img {
     grid-area: image;
+    width: 100%;
+  }
+
+  .img-set {
+    grid-area: image;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: $layoutElementsGutter;
+
+    & > img {
+      align-self: center;
+    }
   }
 
   figcaption {
     grid-area: image-description;
+    margin-bottom: 0.25rem;
+
+    @include isMoreThan("mobile") {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
   }
 
 }
