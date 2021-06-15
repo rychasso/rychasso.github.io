@@ -51,7 +51,7 @@ figure {
   }
 
   @include isMoreThan("mobile") {
-    grid-template-columns: minmax(auto, 1080px);
+    grid-template-columns: minmax(auto, 750px);
   }
 
   > img {
