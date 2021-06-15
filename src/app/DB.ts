@@ -10,9 +10,23 @@ function renderLink(href: string, content: string): string {
 
 export const PROJECTS: IProject[] = [
   {
+    id: 'Lessons-Outside',
+    title: 'Учёба на свежем воздухе',
+    tags: [EProjectTag.illustration],
+    description: `
+        <p>Иллюстрация подготовлена для детского журнала &laquo;Вверх Тормашками&raquo;.</p>
+        <p>Я&nbsp;тут подумала, что если&nbsp;бы в&nbsp;тёплые весенние дни или в&nbsp;начале лета, когда у&nbsp;некоторых в&nbsp;школах ещё учёба не&nbsp;закончилась, практиковались&nbsp;бы занятия на&nbsp;свежем воздухе.</p>
+      `,
+    figures: [
+      {
+        src: getPath('Lessons-Outside/1.jpg'),
+      },
+    ],
+  },
+  {
     id: 'The-Miracle-Beast',
     title: 'Чудо-Юдо',
-    tags: [EProjectTag.illustration, EProjectTag.books],
+    tags: [EProjectTag.illustration, EProjectTag.books, EProjectTag.character],
     description: `
       <p>Иллюстрации подготовлены по&nbsp;стихотворению &laquo;Чудо&mdash;Юдо&raquo; детского писателя Елены Бурак ${renderLink(
         'https://www.instagram.com/burakelena/',
