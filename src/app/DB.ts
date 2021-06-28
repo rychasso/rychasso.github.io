@@ -10,6 +10,38 @@ function renderLink(href: string, content: string): string {
 
 export const PROJECTS: IProject[] = [
   {
+    id: 'The-Dragon-Slayer',
+    title: 'Мечтатели',
+    tags: [EProjectTag.illustration],
+    description: `
+        <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
+        <p><em>Станет рыцарь суперменом, <br>
+            Станет Боингом дракон... <br>
+            Что ж, стандартная система, <br>
+            Просто сказочный закон. <br>
+            Но и в том, и в этом веке, <br>
+            Продолжая славный ряд, <br>
+            Вырастают Человеки <br>
+            Из мечтающих ребят.</em>
+            </p>
+    `,
+    figures: [
+      {
+        src: getPath('The-Dragon-Slayer/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Kindergarten',
+    title: 'Однажды в детском саду',
+    tags: [EProjectTag.illustration],
+    figures: [
+      {
+        src: getPath('Kindergarten/1.jpg'),
+      },
+    ],
+  },
+  {
     id: 'Lessons-Outside',
     title: 'Учёба на свежем воздухе',
     tags: [EProjectTag.illustration],
