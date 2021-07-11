@@ -10,6 +10,16 @@ function renderLink(href: string, content: string): string {
 
 export const PROJECTS: IProject[] = [
   {
+    id: 'Karaoke',
+    title: 'Караоке',
+    tags: [EProjectTag.illustration],
+    figures: [
+      {
+        src: getPath('Karaoke/1.jpg'),
+      },
+    ],
+  },
+  {
     id: 'Attraction',
     title: 'Аттракцион',
     tags: [EProjectTag.illustration],
