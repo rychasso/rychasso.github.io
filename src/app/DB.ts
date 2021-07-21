@@ -10,80 +10,14 @@ function renderLink(href: string, content: string): string {
 
 export const PROJECTS: IProject[] = [
   {
-    id: 'Karaoke',
-    title: 'Караоке',
-    tags: [EProjectTag.illustration],
-    figures: [
-      {
-        src: getPath('Karaoke/1.jpg'),
-      },
-    ],
-  },
-  {
-    id: 'Attraction',
-    title: 'Аттракцион',
-    tags: [EProjectTag.illustration],
-    figures: [
-      {
-        src: getPath('Attraction/1.jpg'),
-      },
-    ],
-  },
-  {
-    id: 'The-Dragon-Slayer',
-    title: 'Мечтатели',
-    tags: [EProjectTag.illustration],
-    description: `
-        <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
-        <p><em>Станет рыцарь суперменом, <br>
-            Станет Боингом дракон... <br>
-            Что ж, стандартная система, <br>
-            Просто сказочный закон. <br>
-            Но и в том, и в этом веке, <br>
-            Продолжая славный ряд, <br>
-            Вырастают Человеки <br>
-            Из мечтающих ребят.</em>
-            </p>
-    `,
-    figures: [
-      {
-        src: getPath('The-Dragon-Slayer/1.jpg'),
-      },
-    ],
-  },
-  {
-    id: 'Kindergarten',
-    title: 'Однажды в детском саду',
-    tags: [EProjectTag.illustration],
-    figures: [
-      {
-        src: getPath('Kindergarten/1.jpg'),
-      },
-    ],
-  },
-  {
-    id: 'Lessons-Outside',
-    title: 'Учёба на свежем воздухе',
-    tags: [EProjectTag.illustration],
-    description: `
-        <p>Иллюстрация подготовлена для детского журнала &laquo;Вверх Тормашками&raquo;.</p>
-        <p>Я&nbsp;тут подумала, что если&nbsp;бы в&nbsp;тёплые весенние дни или в&nbsp;начале лета, когда у&nbsp;некоторых в&nbsp;школах ещё учёба не&nbsp;закончилась, практиковались&nbsp;бы занятия на&nbsp;свежем воздухе.</p>
-      `,
-    figures: [
-      {
-        src: getPath('Lessons-Outside/1.jpg'),
-      },
-    ],
-  },
-  {
     id: 'The-Miracle-Beast',
     title: 'Чудо-Юдо',
     tags: [EProjectTag.illustration, EProjectTag.books, EProjectTag.character],
     description: `
       <p>Иллюстрации подготовлены по&nbsp;стихотворению &laquo;Чудо&mdash;Юдо&raquo; детского писателя Елены Бурак ${renderLink(
-        'https://www.instagram.com/burakelena/',
-        '@burakelena',
-      )}</p>
+      'https://www.instagram.com/burakelena/',
+      '@burakelena',
+    )}</p>
     `,
     posterSrc: getPath('The-Miracle-Beast/poster.jpg'),
     figures: [
@@ -91,11 +25,11 @@ export const PROJECTS: IProject[] = [
         src: getPath('The-Miracle-Beast/book-poster.jpg'),
       },
       {
-        description: 'Подготовка персонажа',
+        title: 'Подготовка персонажа',
         src: getPath('The-Miracle-Beast/work-1.jpg'),
       },
       {
-        description: 'Определение динамики, раскадровка, цвет',
+        title: 'Определение динамики, раскадровка, цвет',
         multipleSrc: [
           getPath('The-Miracle-Beast/work-2.1.jpg'),
           getPath('The-Miracle-Beast/work-2.2.jpg'),
@@ -103,14 +37,14 @@ export const PROJECTS: IProject[] = [
         ],
       },
       {
-        description: 'Подготовка экскизов',
+        title: 'Подготовка экскизов',
         multipleSrc: [
           getPath('The-Miracle-Beast/work-3.1.jpg'),
           getPath('The-Miracle-Beast/work-3.2.jpg'),
         ],
       },
       {
-        description: 'Финальные работы',
+        title: 'Финальные работы',
         src: getPath('The-Miracle-Beast/book-1.jpg'),
       },
       {
@@ -142,6 +76,98 @@ export const PROJECTS: IProject[] = [
       },
       {
         src: getPath('The-Miracle-Beast/book-11.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'The-Beatles',
+    title: 'The Beatles',
+    tags: [EProjectTag.illustration],
+    figures: [
+      {
+        src: getPath('The-Beatles/1.jpg'),
+        description: `<p>${renderLink('https://www.pinterest.ru/pin/692147036484874459', 'Оригинал фотографии')} группы The Beatles</p>`,
+      },
+    ],
+  },
+  {
+    id: 'Childhood-Trading',
+    title: 'Торговля',
+    tags: [EProjectTag.illustration],
+    figures: [
+      {
+        src: getPath('Childhood-Trading/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Karaoke',
+    title: 'Караоке',
+    tags: [EProjectTag.illustration],
+    figures: [
+      {
+        src: getPath('Karaoke/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Attraction',
+    title: 'Аттракцион',
+    tags: [EProjectTag.illustration],
+    figures: [
+      {
+        src: getPath('Attraction/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'The-Dreamers',
+    title: 'Мечтатели',
+    tags: [EProjectTag.illustration],
+    description: `
+        <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
+        <p><em>Станет рыцарь суперменом, <br>
+            Станет Боингом дракон... <br>
+            Что ж, стандартная система, <br>
+            Просто сказочный закон. <br>
+            Но и в том, и в этом веке, <br>
+            Продолжая славный ряд, <br>
+            Вырастают Человеки <br>
+            Из мечтающих ребят.</em>
+            </p>
+    `,
+    figures: [
+      {
+        src: getPath('The-Dreamers/1.jpg'),
+        description: 'Вариант 1'
+      },
+      {
+        src: getPath('The-Dreamers/2.jpg'),
+        description: 'Вариант 2'
+      },
+    ],
+  },
+  {
+    id: 'Kindergarten',
+    title: 'Однажды в детском саду',
+    tags: [EProjectTag.illustration],
+    figures: [
+      {
+        src: getPath('Kindergarten/1.jpg'),
+      },
+    ],
+  },
+  {
+    id: 'Lessons-Outside',
+    title: 'Учёба на свежем воздухе',
+    tags: [EProjectTag.illustration],
+    description: `
+        <p>Иллюстрация подготовлена для детского журнала &laquo;Вверх Тормашками&raquo;.</p>
+        <p>Я&nbsp;тут подумала, что если&nbsp;бы в&nbsp;тёплые весенние дни или в&nbsp;начале лета, когда у&nbsp;некоторых в&nbsp;школах ещё учёба не&nbsp;закончилась, практиковались&nbsp;бы занятия на&nbsp;свежем воздухе.</p>
+      `,
+    figures: [
+      {
+        src: getPath('Lessons-Outside/1.jpg'),
       },
     ],
   },

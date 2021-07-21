@@ -1,5 +1,6 @@
 interface IProjectFigureBase {
   description?: string;
+  title?: string;
 }
 
 export interface IProjectFigure extends IProjectFigureBase {

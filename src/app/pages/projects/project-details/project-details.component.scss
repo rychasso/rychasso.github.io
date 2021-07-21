@@ -42,8 +42,9 @@ article {
 figure {
   display: grid;
   grid-template-areas:
-    "image-description"
+    "image-title"
     "image"
+    "image-description"
   ;
 
   &:not(:last-child) {
@@ -71,8 +72,8 @@ figure {
     }
   }
 
-  figcaption {
-    grid-area: image-description;
+  figcaption.image-title {
+    grid-area: image-title;
     margin-bottom: 0.25rem;
 
     @include isMoreThan("mobile") {
@@ -81,4 +82,9 @@ figure {
     }
   }
 
+  figcaption.image-description {
+    grid-area: image-description;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+  }
 }
