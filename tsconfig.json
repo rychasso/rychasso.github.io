@@ -25,6 +25,7 @@
       "@modules/*": ["src/app/modules/*"],
       "@services/*": ["src/app/services/*"],
       "@env": ["src/environments/environment.ts"],
+      "@i18n/*": ["src/app/i18n/*"],
     }
   },
   "angularCompilerOptions": {
