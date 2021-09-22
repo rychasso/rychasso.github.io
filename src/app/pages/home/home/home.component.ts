@@ -4,6 +4,7 @@ import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { IProject } from '@models/Project';
 import { PageMetaService } from '@services/page-meta.service';
+import { TranslateService } from '@i18n/translate.service';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,8 @@ export class HomeComponent implements OnInit {
   constructor(private route: ActivatedRoute, private pageMetaService: PageMetaService) {}
 
   ngOnInit(): void {
-    this.pageMetaService.setTitle('Портфолио | Алёна Рычагова');
+    const title = `${TranslateService.localize('menu.portfolio')} | ${TranslateService.localize('menu.first-name')} ${TranslateService.localize('menu.last-name')}`;
+    this.pageMetaService.setTitle(title);
     this.pageMetaService.setDescription('Ознакомьтесь со списком моих работ');
   }
 }

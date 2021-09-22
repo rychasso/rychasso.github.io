@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Resolve, RouterStateSnapshot, ActivatedRouteSnapshot, Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { PROJECTS } from 'src/app/DB';
+import { getProjects } from 'src/app/DB';
 import { IProject } from '@models/Project';
 
 @Injectable()
@@ -10,7 +10,7 @@ export class ProjectResolver implements Resolve<IProject | null> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<IProject | null> {
     const { id } = route.params;
-    const targetProject = PROJECTS.find((project) => project.id === id);
+    const targetProject = getProjects().find((project) => project.id === id);
 
     if (!targetProject) {
       this.router.navigateByUrl('/');
