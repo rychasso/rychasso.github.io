@@ -43,6 +43,8 @@ export const projects = {
   'project.Winter-Street.title': 'Новогодняя улица',
   'project.Lolita-Grandma.title': 'Бабушка Лолита',
   'project.Pizzeria-The-Bo.title': 'Мистер Бо',
+  'project.Bitterly.title': 'Горько',
+  'project.Shaggy-Creeper.title': 'Мохнатая ползучка',
 };
 
 const locale = {

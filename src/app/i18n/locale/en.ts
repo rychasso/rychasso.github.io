@@ -48,6 +48,8 @@ const projects: typeof projectsRu = {
   'project.Winter-Street.title': 'Christmas street',
   'project.Lolita-Grandma.title': 'Lolita grandma',
   'project.Pizzeria-The-Bo.title': 'Mister Bo',
+  'project.Bitterly.title': 'Bitterly',
+  'project.Shaggy-Creeper.title': 'Shaggy-Creeper',
 };
 
 const locales: typeof ru = {
