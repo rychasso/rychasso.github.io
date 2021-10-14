@@ -15,6 +15,29 @@ export function getProjects(): IProject[] {
       id: 'Shaggy-Creeper',
       title: TranslateService.localize('project.Shaggy-Creeper.title'),
       tags: [EProjectTag.illustration],
+      description: `
+        <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
+        <p>
+          <em>
+            Мохнатую ползучку <br>
+            Я в садике нашла. <br>
+            Мохнатую ползучку <br>
+            В ладошку я взяла. <br>
+            Вокруг жужжали пчёлы, <br>
+            Летала стрекоза. <br>
+            Ползучке посмотрела <br>
+            Я в чёрные глаза. <br>
+            И в них прочла: <br>
+            «Не надо тащить меня домой. <br>
+            Тебе я очень рада, <br>
+            Но быть хочу живой!» <br>
+            Теперь гуляет где-то <br>
+            В берёзовых лесах <br>
+            Мохнатая ползучка <br>
+            О двадцати ногах.
+          </em>
+        </p>
+    `,
       figures: [
         {
           src: getPath('Shaggy-Creeper/1.jpg'),
@@ -25,6 +48,7 @@ export function getProjects(): IProject[] {
       id: 'Bitterly',
       title: TranslateService.localize('project.Bitterly.title'),
       tags: [EProjectTag.illustration],
+      description: `<p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>`,
       figures: [
         {
           src: getPath('Bitterly/1.jpg'),
