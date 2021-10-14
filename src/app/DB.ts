@@ -139,17 +139,6 @@ export function getProjects(): IProject[] {
       ],
     },
     {
-      id: 'The-Beatles',
-      title: 'The Beatles',
-      tags: [EProjectTag.illustration],
-      figures: [
-        {
-          src: getPath('The-Beatles/1.jpg'),
-          description: `<p>${renderLink('https://www.pinterest.ru/pin/692147036484874459', 'Оригинал фотографии')} группы The Beatles</p>`,
-        },
-      ],
-    },
-    {
       id: 'Childhood-Trading',
       title: TranslateService.localize('project.Childhood-Trading.title'),
       tags: [EProjectTag.illustration],
