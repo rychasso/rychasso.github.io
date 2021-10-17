@@ -12,6 +12,19 @@ function renderLink(href: string, content: string): string {
 export function getProjects(): IProject[] {
   return [
     {
+      id: 'Emperor',
+      title: TranslateService.localize('project.Emperor.title'),
+      tags: [EProjectTag.illustration],
+      description: `
+        <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
+      `,
+      figures: [
+        {
+          src: getPath('Emperor/1.jpg'),
+        },
+      ],
+    },
+    {
       id: 'Shaggy-Creeper',
       title: TranslateService.localize('project.Shaggy-Creeper.title'),
       tags: [EProjectTag.illustration],
@@ -229,6 +242,9 @@ export function getProjects(): IProject[] {
       figures: [
         {
           src: getPath('Tailwind/1.jpg'),
+        },
+        {
+          src: getPath('Tailwind/2.jpg'),
         },
       ],
     },

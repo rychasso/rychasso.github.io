@@ -45,6 +45,7 @@ export const projects = {
   'project.Pizzeria-The-Bo.title': 'Мистер Бо',
   'project.Bitterly.title': 'Горько',
   'project.Shaggy-Creeper.title': 'Мохнатая ползучка',
+  'project.Emperor.title': 'Император',
 };
 
 const locale = {

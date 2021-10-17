@@ -50,6 +50,7 @@ const projects: typeof projectsRu = {
   'project.Pizzeria-The-Bo.title': 'Mister Bo',
   'project.Bitterly.title': 'Bitterly',
   'project.Shaggy-Creeper.title': 'Shaggy-Creeper',
+  'project.Emperor.title': 'Emperor',
 };
 
 const locales: typeof ru = {
