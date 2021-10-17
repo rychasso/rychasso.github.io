@@ -211,7 +211,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Kindergarten',
       title: TranslateService.localize('project.Kindergarten.title'),
-      tags: [],
+      tags: [EProjectTag.magazine],
       figures: [
         {
           src: getPath('Kindergarten/1.jpg'),
@@ -312,110 +312,6 @@ export function getProjects(): IProject[] {
         },
         {
           src: getPath('Fox-Family/2.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Misha-The-President',
-      title: TranslateService.localize('project.Misha-The-President.title'),
-      tags: [EProjectTag.magazine],
-      description: `<p>Иллюстрация для детского журнала &laquo;Вверх Тормашками&raquo;: Миша хочет стать Президентом, но&nbsp;боится, потому что они рано лысеют.</p>`,
-      figures: [
-        {
-          src: getPath('Misha-The-President/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Girl-With-Peaches',
-      title: TranslateService.localize('project.Girl-With-Peaches.title'),
-      tags: [],
-      description: `<p>Иллюстрация, подготовленная по&nbsp;картине художника &laquo;Девочка с&nbsp;персиками&raquo; Валентина Серова.</p>`,
-      figures: [
-        {
-          src: getPath('Girl-With-Peaches/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Mona-Lisa',
-      title: TranslateService.localize('project.Mona-Lisa.title'),
-      tags: [],
-      description: `<p>Иллюстрация, подготовленная по&nbsp;картине художника, ученого, писателя и&nbsp;изобретателя &laquo;Джоконда&raquo; Леонардо да&nbsp;Винчи.</p>`,
-      figures: [
-        {
-          src: getPath('Mona-Lisa/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Frida-Kahlo',
-      title: TranslateService.localize('project.Frida-Kahlo.title'),
-      tags: [],
-      description: `<p>Стилизованный портрет мексиканской художницы Фриды Кало. </p>`,
-      figures: [
-        {
-          src: getPath('Frida-Kahlo/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Upside-Down-Magazine',
-      title: TranslateService.localize('project.Upside-Down-Magazine.title'),
-      tags: [EProjectTag.magazine],
-      description: `<p>Обложка для второго номера журнала &laquo;Вверх тормашками&raquo;</p>`,
-      posterSrc: getPath('Upside-Down-Magazine/poster.jpg'),
-      figures: [
-        {
-          src: getPath('Upside-Down-Magazine/1.jpg'),
-        },
-        {
-          src: getPath('Upside-Down-Magazine/2.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Spring-Animals',
-      title: TranslateService.localize('project.Spring-Animals.title'),
-      tags: [],
-      figures: [
-        {
-          src: getPath('Spring-Animals/1.jpg'),
-        },
-        {
-          src: getPath('Spring-Animals/2.jpg'),
-        },
-        {
-          src: getPath('Spring-Animals/3.jpg'),
-        },
-        {
-          src: getPath('Spring-Animals/4.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Vasily-The-Cat',
-      title: TranslateService.localize('project.Vasily-The-Cat.title'),
-      tags: [],
-      description: `<p>Серия иллюстраций, подготовленных для открыток. </p>`,
-      figures: [
-        {
-          src: getPath('Vasily-The-Cat/6.jpg'),
-        },
-        {
-          src: getPath('Vasily-The-Cat/1.jpg'),
-        },
-        {
-          src: getPath('Vasily-The-Cat/2.jpg'),
-        },
-        {
-          src: getPath('Vasily-The-Cat/3.jpg'),
-        },
-        {
-          src: getPath('Vasily-The-Cat/4.jpg'),
-        },
-        {
-          src: getPath('Vasily-The-Cat/5.jpg'),
         },
       ],
     },
