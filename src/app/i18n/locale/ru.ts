@@ -8,7 +8,9 @@ export const menu = {
   'menu.about': 'Обо мне',
   'menu.portfolio': 'Портфолио',
   'menu.tag.characters': 'Персонажи',
-  'menu.tag.illustrations': 'Иллюстрации',
+  'menu.tag.magazine': 'Для журналов',
+  'menu.tag.book': 'Для книг',
+  'menu.tag.all': 'Все',
   'menu.first-name': 'Алёна',
   'menu.last-name': 'Рычагова',
 };

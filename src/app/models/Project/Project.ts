@@ -13,8 +13,8 @@ export interface IProjectFigureSet extends IProjectFigureBase {
 
 export enum EProjectTag {
   character = 'character',
-  illustration = 'illustration',
   books = 'books',
+  magazine = 'magazine',
 }
 
 export interface IProject {

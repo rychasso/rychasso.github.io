@@ -14,7 +14,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Emperor',
       title: TranslateService.localize('project.Emperor.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.magazine],
       description: `
         <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
       `,
@@ -27,7 +27,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Shaggy-Creeper',
       title: TranslateService.localize('project.Shaggy-Creeper.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.magazine],
       description: `
         <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
         <p>
@@ -60,7 +60,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Bitterly',
       title: TranslateService.localize('project.Bitterly.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.magazine],
       description: `<p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>`,
       figures: [
         {
@@ -71,7 +71,7 @@ export function getProjects(): IProject[] {
     {
       id: 'The-Beatles',
       title: 'The Beatles',
-      tags: [EProjectTag.illustration],
+      tags: [],
       figures: [
         {
           src: getPath('The-Beatles/1.jpg'),
@@ -82,7 +82,7 @@ export function getProjects(): IProject[] {
     {
       id: 'The-Miracle-Beast',
       title: TranslateService.localize('project.THE-MIRACLE-BEAST.title'),
-      tags: [EProjectTag.illustration, EProjectTag.books, EProjectTag.character],
+      tags: [EProjectTag.books, EProjectTag.character],
       description: `
         <p>${TranslateService.localize('project.THE-MIRACLE-BEAST.description', {
           link: renderLink(
@@ -154,7 +154,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Childhood-Trading',
       title: TranslateService.localize('project.Childhood-Trading.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       figures: [
         {
           src: getPath('Childhood-Trading/1.jpg'),
@@ -164,7 +164,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Karaoke',
       title: TranslateService.localize('project.Karaoke.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       figures: [
         {
           src: getPath('Karaoke/1.jpg'),
@@ -174,7 +174,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Attraction',
       title: TranslateService.localize('project.Attraction.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       figures: [
         {
           src: getPath('Attraction/1.jpg'),
@@ -184,7 +184,7 @@ export function getProjects(): IProject[] {
     {
       id: 'The-Dreamers',
       title: TranslateService.localize('project.The-Dreamers.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.magazine],
       description: `
         <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
         <p><em>Станет рыцарь суперменом, <br>
@@ -211,7 +211,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Kindergarten',
       title: TranslateService.localize('project.Kindergarten.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       figures: [
         {
           src: getPath('Kindergarten/1.jpg'),
@@ -221,7 +221,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Lessons-Outside',
       title: TranslateService.localize('project.Lessons-Outside.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.magazine],
       description: `
         <p>Иллюстрация подготовлена для детского журнала &laquo;Вверх Тормашками&raquo;.</p>
         <p>Я&nbsp;тут подумала, что если&nbsp;бы в&nbsp;тёплые весенние дни или в&nbsp;начале лета, когда у&nbsp;некоторых в&nbsp;школах ещё учёба не&nbsp;закончилась, практиковались&nbsp;бы занятия на&nbsp;свежем воздухе.</p>
@@ -235,7 +235,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Tailwind',
       title: TranslateService.localize('project.Tailwind.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.magazine],
       description:
         '<p>Иллюстрация подготовлена для детского журнала &laquo;Вверх Тормашками&raquo; по рассказу Ольги Клушиной &laquo;Попутный ветер&raquo;.</p>',
       posterSrc: getPath('Tailwind/poster.jpg'),
@@ -251,7 +251,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Storm',
       title: TranslateService.localize('project.Storm.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       posterSrc: getPath('Storm/poster.jpg'),
       figures: [
         {
@@ -262,7 +262,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Masha-And-Seeds',
       title: TranslateService.localize('project.Masha-And-Seeds.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.books],
       description: '<p>Иллюстрации к сказке &laquo;Как Маша посадила семена&raquo;</p>',
       posterSrc: getPath('Masha-And-Seeds/poster.jpg'),
       figures: [
@@ -283,7 +283,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Semen-Mikhailovich-And-Vanya',
       title: TranslateService.localize('project.Semen-Mikhailovich-And-Vanya.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.magazine],
       description:
         '<p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>',
       figures: [
@@ -295,7 +295,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Alenushka',
       title: TranslateService.localize('project.Alenushka.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       figures: [
         {
           src: getPath('Alenushka/1.jpg'),
@@ -305,7 +305,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Fox-Family',
       title: TranslateService.localize('project.Fox-Family.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       figures: [
         {
           src: getPath('Fox-Family/1.jpg'),
@@ -318,7 +318,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Misha-The-President',
       title: TranslateService.localize('project.Misha-The-President.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.magazine],
       description: `<p>Иллюстрация для детского журнала &laquo;Вверх Тормашками&raquo;: Миша хочет стать Президентом, но&nbsp;боится, потому что они рано лысеют.</p>`,
       figures: [
         {
@@ -329,7 +329,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Girl-With-Peaches',
       title: TranslateService.localize('project.Girl-With-Peaches.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       description: `<p>Иллюстрация, подготовленная по&nbsp;картине художника &laquo;Девочка с&nbsp;персиками&raquo; Валентина Серова.</p>`,
       figures: [
         {
@@ -340,7 +340,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Mona-Lisa',
       title: TranslateService.localize('project.Mona-Lisa.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       description: `<p>Иллюстрация, подготовленная по&nbsp;картине художника, ученого, писателя и&nbsp;изобретателя &laquo;Джоконда&raquo; Леонардо да&nbsp;Винчи.</p>`,
       figures: [
         {
@@ -351,7 +351,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Frida-Kahlo',
       title: TranslateService.localize('project.Frida-Kahlo.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       description: `<p>Стилизованный портрет мексиканской художницы Фриды Кало. </p>`,
       figures: [
         {
@@ -362,7 +362,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Upside-Down-Magazine',
       title: TranslateService.localize('project.Upside-Down-Magazine.title'),
-      tags: [EProjectTag.illustration],
+      tags: [EProjectTag.magazine],
       description: `<p>Обложка для второго номера журнала &laquo;Вверх тормашками&raquo;</p>`,
       posterSrc: getPath('Upside-Down-Magazine/poster.jpg'),
       figures: [
@@ -377,7 +377,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Spring-Animals',
       title: TranslateService.localize('project.Spring-Animals.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       figures: [
         {
           src: getPath('Spring-Animals/1.jpg'),
@@ -396,7 +396,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Vasily-The-Cat',
       title: TranslateService.localize('project.Vasily-The-Cat.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       description: `<p>Серия иллюстраций, подготовленных для открыток. </p>`,
       figures: [
         {
@@ -422,7 +422,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Winter-Street',
       title: TranslateService.localize('project.Winter-Street.title'),
-      tags: [EProjectTag.illustration],
+      tags: [],
       description:
         '<p>Иллюстрация, подготовленная для Московского дома подарков для новогодней продукции.</p>',
       figures: [

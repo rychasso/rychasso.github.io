@@ -12,7 +12,9 @@ const menu: typeof menuRu = {
   'menu.about': 'About',
   'menu.portfolio': 'Portfolio',
   'menu.tag.characters': 'Characters',
-  'menu.tag.illustrations': 'Illustrations',
+  'menu.tag.magazine': 'Magazines',
+  'menu.tag.book': 'Books',
+  'menu.tag.all': 'All',
   'menu.first-name': 'Alyona',
   'menu.last-name': 'Rychagova',
 };

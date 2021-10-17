@@ -48,8 +48,12 @@ export class AppLayoutComponent {
 
   public readonly submenuItems: ISubmenu[] = [
     {
-      label: TranslateService.localize('menu.tag.illustrations'),
-      href: `/tags/${EProjectTag.illustration}`,
+      label: TranslateService.localize('menu.tag.book'),
+      href: `/tags/${EProjectTag.books}`,
+    },
+    {
+      label: TranslateService.localize('menu.tag.magazine'),
+      href: `/tags/${EProjectTag.magazine}`,
     },
     {
       label: TranslateService.localize('menu.tag.characters'),
