@@ -1,6 +1,7 @@
 import { EProjectTag, IProject } from '@models/Project';
 import { TranslateService } from '@i18n/translate.service';
 import { getWhatIsHappinessProject } from './DB/what-is-happiness';
+import { getTheMiracleBeastProject } from './DB/the-miracle-beast';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -81,78 +82,7 @@ export function getProjects(): IProject[] {
         },
       ],
     },
-    {
-      id: 'The-Miracle-Beast',
-      title: TranslateService.localize('project.THE-MIRACLE-BEAST.title'),
-      tags: [EProjectTag.books, EProjectTag.character],
-      description: `
-        <p>${TranslateService.localize('project.THE-MIRACLE-BEAST.description', {
-          link: renderLink(
-            'https://www.instagram.com/burakelena/',
-            '@burakelena',
-          )
-      })}</p>
-      `,
-      posterSrc: getPath('The-Miracle-Beast/poster.jpg'),
-      figures: [
-        {
-          src: getPath('The-Miracle-Beast/book-poster.jpg'),
-        },
-        {
-          title: TranslateService.localize('project.THE-MIRACLE-BEAST.prepare-description'),
-          src: getPath('The-Miracle-Beast/work-1.jpg'),
-        },
-        {
-          title: TranslateService.localize('project.THE-MIRACLE-BEAST.steps-description'),
-          multipleSrc: [
-            getPath('The-Miracle-Beast/work-2.1.jpg'),
-            getPath('The-Miracle-Beast/work-2.2.jpg'),
-            getPath('The-Miracle-Beast/work-2.3.jpg'),
-          ],
-        },
-        {
-          title: TranslateService.localize('project.THE-MIRACLE-BEAST.templates-description'),
-          multipleSrc: [
-            getPath('The-Miracle-Beast/work-3.1.jpg'),
-            getPath('The-Miracle-Beast/work-3.2.jpg'),
-          ],
-        },
-        {
-          title: TranslateService.localize('project.THE-MIRACLE-BEAST.results-description'),
-          src: getPath('The-Miracle-Beast/book-1.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-2.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-3.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-4.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-5.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-6.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-7.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-8.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-9.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-10.jpg'),
-        },
-        {
-          src: getPath('The-Miracle-Beast/book-11.jpg'),
-        },
-      ],
-    },
+    getTheMiracleBeastProject(),
     {
       id: 'Childhood-Trading',
       title: TranslateService.localize('project.Childhood-Trading.title'),
