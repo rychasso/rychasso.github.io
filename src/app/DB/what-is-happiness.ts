@@ -68,5 +68,11 @@ export const getWhatIsHappinessProject: () => IProject = () => ({
     {
       src: getSrc('book-cover/3.jpg'),
     },
+    {
+      src: getSrc('book-cover/4.jpg'),
+    },
+    {
+      src: getSrc('book-cover/final.jpg'),
+    },
   ],
 });
