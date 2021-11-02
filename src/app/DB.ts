@@ -1,5 +1,6 @@
 import { EProjectTag, IProject } from '@models/Project';
 import { TranslateService } from '@i18n/translate.service';
+import { getWhatIsHappinessProject } from './DB/what-is-happiness';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -11,6 +12,7 @@ function renderLink(href: string, content: string): string {
 
 export function getProjects(): IProject[] {
   return [
+    getWhatIsHappinessProject(),
     {
       id: 'Emperor',
       title: TranslateService.localize('project.Emperor.title'),

@@ -48,6 +48,13 @@ export const projects = {
   'project.Bitterly.title': 'Горько',
   'project.Shaggy-Creeper.title': 'Мохнатая ползучка',
   'project.Emperor.title': 'Император',
+
+  'project.What-Is-Happiness.title': 'Что такое счастье?',
+  'project.What-Is-Happiness.prepare-description': 'Подготовка персонажей',
+  'project.What-Is-Happiness.storyboard': 'Раскадровка',
+  'project.What-Is-Happiness.templates': 'Подготовка эскизов',
+  'project.What-Is-Happiness.results-description': 'Финальные работы',
+  'project.What-Is-Happiness.book-cover': 'Подготовка обложки',
 };
 
 const locale = {

@@ -53,6 +53,13 @@ const projects: typeof projectsRu = {
   'project.Bitterly.title': 'Bitterly',
   'project.Shaggy-Creeper.title': 'Shaggy-Creeper',
   'project.Emperor.title': 'Emperor',
+
+  'project.What-Is-Happiness.title': 'What is happiness?',
+  'project.What-Is-Happiness.prepare-description': 'Characters search',
+  'project.What-Is-Happiness.storyboard': 'Storyboard',
+  'project.What-Is-Happiness.templates': 'Templates',
+  'project.What-Is-Happiness.results-description': 'Results',
+  'project.What-Is-Happiness.book-cover': 'Book cover',
 };
 
 const locales: typeof ru = {
