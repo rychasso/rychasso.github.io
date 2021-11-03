@@ -9,7 +9,7 @@ const getSrc = assetsPathBuilder(`assets/projects/${id}`);
 export const getWhatIsHappinessProject: () => IProject = () => ({
   id,
   title: TranslateService.localize('project.What-Is-Happiness.title'),
-  tags: [EProjectTag.books],
+  tags: [EProjectTag.books, EProjectTag.character],
   posterSrc: getSrc('poster.jpg'),
   figures: [
     {
