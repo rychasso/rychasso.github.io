@@ -17,8 +17,8 @@ function renderLink(href: string, content: string): string {
 export function getProjects(): IProject[] {
   return [
     getWhatIsHappinessProject(),
-    getSamovarProject(),
     getChristmas2021Project(),
+    getSamovarProject(),
     {
       id: 'Emperor',
       title: TranslateService.localize('project.Emperor.title'),
