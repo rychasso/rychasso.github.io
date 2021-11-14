@@ -60,6 +60,9 @@ const projects: typeof projectsRu = {
   'project.What-Is-Happiness.templates': 'Templates',
   'project.What-Is-Happiness.results-description': 'Results',
   'project.What-Is-Happiness.book-cover': 'Book cover',
+
+  'project.Samovar.title': 'Samovar',
+  'project.Christmas-2021.title': 'Christmas',
 };
 
 const locales: typeof ru = {

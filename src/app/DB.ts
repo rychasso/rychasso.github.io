@@ -2,6 +2,9 @@ import { EProjectTag, IProject } from '@models/Project';
 import { TranslateService } from '@i18n/translate.service';
 import { getWhatIsHappinessProject } from './DB/what-is-happiness';
 import { getTheMiracleBeastProject } from './DB/the-miracle-beast';
+import { getSamovarProject } from './DB/samovar';
+import { getUpsideDownMagazineDescription } from './DB/_helpers';
+import { getChristmas2021Project } from './DB/Christmas-2021';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -14,13 +17,13 @@ function renderLink(href: string, content: string): string {
 export function getProjects(): IProject[] {
   return [
     getWhatIsHappinessProject(),
+    getSamovarProject(),
+    getChristmas2021Project(),
     {
       id: 'Emperor',
       title: TranslateService.localize('project.Emperor.title'),
       tags: [EProjectTag.magazine],
-      description: `
-        <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
-      `,
+      description: getUpsideDownMagazineDescription(),
       figures: [
         {
           src: getPath('Emperor/1.jpg'),
@@ -32,7 +35,7 @@ export function getProjects(): IProject[] {
       title: TranslateService.localize('project.Shaggy-Creeper.title'),
       tags: [EProjectTag.magazine],
       description: `
-        <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
+        ${getUpsideDownMagazineDescription()}
         <p>
           <em>
             Мохнатую ползучку <br>
@@ -64,7 +67,7 @@ export function getProjects(): IProject[] {
       id: 'Bitterly',
       title: TranslateService.localize('project.Bitterly.title'),
       tags: [EProjectTag.magazine],
-      description: `<p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>`,
+      description: getUpsideDownMagazineDescription(),
       figures: [
         {
           src: getPath('Bitterly/1.jpg'),
@@ -118,7 +121,7 @@ export function getProjects(): IProject[] {
       title: TranslateService.localize('project.The-Dreamers.title'),
       tags: [EProjectTag.magazine],
       description: `
-        <p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>
+        ${getUpsideDownMagazineDescription()}
         <p><em>Станет рыцарь суперменом, <br>
             Станет Боингом дракон... <br>
             Что ж, стандартная система, <br>
@@ -155,7 +158,7 @@ export function getProjects(): IProject[] {
       title: TranslateService.localize('project.Lessons-Outside.title'),
       tags: [EProjectTag.magazine],
       description: `
-        <p>Иллюстрация подготовлена для детского журнала &laquo;Вверх Тормашками&raquo;.</p>
+        ${getUpsideDownMagazineDescription()}
         <p>Я&nbsp;тут подумала, что если&nbsp;бы в&nbsp;тёплые весенние дни или в&nbsp;начале лета, когда у&nbsp;некоторых в&nbsp;школах ещё учёба не&nbsp;закончилась, практиковались&nbsp;бы занятия на&nbsp;свежем воздухе.</p>
       `,
       figures: [
@@ -216,8 +219,7 @@ export function getProjects(): IProject[] {
       id: 'Semen-Mikhailovich-And-Vanya',
       title: TranslateService.localize('project.Semen-Mikhailovich-And-Vanya.title'),
       tags: [EProjectTag.magazine],
-      description:
-        '<p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>',
+      description: getUpsideDownMagazineDescription(),
       figures: [
         {
           src: getPath('Semen-Mikhailovich-And-Vanya/1.jpg'),

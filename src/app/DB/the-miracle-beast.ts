@@ -7,7 +7,7 @@ const id = 'The-Miracle-Beast';
 const getSrc = assetsPathBuilder(`assets/projects/${id}`);
 
 export const getTheMiracleBeastProject: () => IProject = () => ({
-  id: 'The-Miracle-Beast',
+  id,
   title: TranslateService.localize('project.THE-MIRACLE-BEAST.title'),
   tags: [EProjectTag.books, EProjectTag.character],
   description: `

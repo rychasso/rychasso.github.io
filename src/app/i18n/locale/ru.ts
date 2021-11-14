@@ -55,6 +55,9 @@ export const projects = {
   'project.What-Is-Happiness.templates': 'Подготовка эскизов',
   'project.What-Is-Happiness.results-description': 'Финальные работы',
   'project.What-Is-Happiness.book-cover': 'Подготовка обложки',
+
+  'project.Samovar.title': 'Самовар',
+  'project.Christmas-2021.title': 'Рождество',
 };
 
 const locale = {
