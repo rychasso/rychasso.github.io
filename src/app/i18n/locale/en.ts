@@ -63,6 +63,7 @@ const projects: typeof projectsRu = {
 
   'project.Samovar.title': 'Samovar',
   'project.Christmas-2021.title': 'Christmas',
+  'project.Holiday-Comes-To-Us.title': 'Holiday comes to us',
 };
 
 const locales: typeof ru = {

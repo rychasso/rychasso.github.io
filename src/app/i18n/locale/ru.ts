@@ -58,6 +58,7 @@ export const projects = {
 
   'project.Samovar.title': 'Самовар',
   'project.Christmas-2021.title': 'Рождество',
+  'project.Holiday-Comes-To-Us.title': 'Праздник к нам приходит',
 };
 
 const locale = {
