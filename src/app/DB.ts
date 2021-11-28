@@ -6,6 +6,7 @@ import { getSamovarProject } from './DB/samovar';
 import { getUpsideDownMagazineDescription } from './DB/_helpers';
 import { getChristmas2021Project } from './DB/Christmas-2021';
 import { getHolidayComesToUsProject } from './DB/Holiday-Comes-To-Us';
+import { getBedtimeStoriesForKidsProject } from './DB/Bedtime-Stories-For-Kids';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -17,6 +18,7 @@ function renderLink(href: string, content: string): string {
 
 export function getProjects(): IProject[] {
   return [
+    getBedtimeStoriesForKidsProject(),
     getWhatIsHappinessProject(),
     getHolidayComesToUsProject(),
     getChristmas2021Project(),
