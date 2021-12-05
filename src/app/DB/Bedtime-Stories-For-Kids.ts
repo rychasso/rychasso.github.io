@@ -18,5 +18,8 @@ export const getBedtimeStoriesForKidsProject: () => IProject = () => ({
     {
       src: getSrc('1.jpg'),
     },
+    {
+      src: getSrc('mockup.jpg'),
+    },
   ],
 });
