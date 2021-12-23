@@ -66,6 +66,8 @@ const projects: typeof projectsRu = {
   'project.Holiday-Comes-To-Us.title': 'Holiday comes to us',
   'project.Bedtime-Stories-For-Kids.title': 'Bedtime stories for kids',
   'project.In-The-Forest.title': 'In the forest',
+  'project.Eat-With-Tea.title': 'For tea',
+  'project.Chemist.title': 'Chemist',
 };
 
 const locales: typeof ru = {

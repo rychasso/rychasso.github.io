@@ -8,6 +8,8 @@ import { getChristmas2021Project } from './DB/Christmas-2021';
 import { getHolidayComesToUsProject } from './DB/Holiday-Comes-To-Us';
 import { getBedtimeStoriesForKidsProject } from './DB/Bedtime-Stories-For-Kids';
 import { getInTheForestProject } from './DB/In-The-Forest';
+import { getChemistProject } from './DB/Chemist';
+import { getEatWithTeaProject } from './DB/Eat-With-Tea';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -19,6 +21,8 @@ function renderLink(href: string, content: string): string {
 
 export function getProjects(): IProject[] {
   return [
+    getChemistProject(),
+    getEatWithTeaProject(),
     getInTheForestProject(),
     getBedtimeStoriesForKidsProject(),
     getWhatIsHappinessProject(),

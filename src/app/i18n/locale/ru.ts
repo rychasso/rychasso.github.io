@@ -61,6 +61,8 @@ export const projects = {
   'project.Holiday-Comes-To-Us.title': 'Праздник к нам приходит',
   'project.Bedtime-Stories-For-Kids.title': 'Bedtime stories for kids',
   'project.In-The-Forest.title': 'В лесу',
+  'project.Eat-With-Tea.title': 'К чаю',
+  'project.Chemist.title': 'Химик',
 };
 
 const locale = {

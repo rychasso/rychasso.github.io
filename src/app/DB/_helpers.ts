@@ -11,3 +11,7 @@ export function renderLink(href: string, content: string): string {
 export function getUpsideDownMagazineDescription(): string {
   return `<p>Иллюстрация, подготовленная для детского журнала &laquo;Вверх тормашками&raquo;</p>`;
 }
+
+export function getGenericMagazineDescription(): string {
+  return `<p>Иллюстрация, подготовленная для детского журнала </p>`;
+}
