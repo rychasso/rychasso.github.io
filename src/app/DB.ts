@@ -21,11 +21,11 @@ function renderLink(href: string, content: string): string {
 
 export function getProjects(): IProject[] {
   return [
-    getChemistProject(),
     getEatWithTeaProject(),
     getInTheForestProject(),
     getBedtimeStoriesForKidsProject(),
     getWhatIsHappinessProject(),
+    getChemistProject(),
     getHolidayComesToUsProject(),
     getChristmas2021Project(),
     getSamovarProject(),
