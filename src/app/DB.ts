@@ -2,7 +2,7 @@ import { EProjectTag, IProject } from '@models/Project';
 import { TranslateService } from '@i18n/translate.service';
 import { getWhatIsHappinessProject } from './DB/what-is-happiness';
 import { getTheMiracleBeastProject } from './DB/the-miracle-beast';
-import { getSamovarProject } from './DB/samovar';
+import { getSamovarProject } from './DB/Samovar';
 import { getUpsideDownMagazineDescription } from './DB/_helpers';
 import { getChristmas2021Project } from './DB/Christmas-2021';
 import { getHolidayComesToUsProject } from './DB/Holiday-Comes-To-Us';

@@ -14,6 +14,9 @@ export const getSamovarProject: () => IProject = () => ({
   posterSrc: getSrc('poster.jpg'),
   figures: [
     {
+      src: getSrc('2.jpg'),
+    },
+    {
       src: getSrc('1.jpg'),
     },
   ],
