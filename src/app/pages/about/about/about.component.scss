@@ -1,31 +1,5 @@
 @import "variables";
 
-p, ul {
-  margin-bottom: 1em;
-}
-
-h1 {
-  margin-bottom: 2rem;
-}
-
-h2 {
-  margin-top: 2rem;
-  margin-bottom: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-li {
-  margin-bottom: 0.5rem;
-  list-style-type: disc;
-  list-style-position: inside;
-}
-
-strong {
-  font-weight: 600;
-}
-
-
 .about-me-row {
   display: grid;
   grid-template-areas:
@@ -38,7 +12,6 @@ strong {
 
 .about-me-photo-col {
   grid-area: photo;
-
 }
 
 .about-me-content-col {
