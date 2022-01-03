@@ -13,6 +13,7 @@ export const menu = {
   'menu.tag.all': 'Все',
   'menu.first-name': 'Алёна',
   'menu.last-name': 'Рычагова',
+  'menu.process': 'Процесс',
 };
 
 export const projects = {

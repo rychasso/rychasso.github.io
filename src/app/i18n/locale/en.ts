@@ -17,6 +17,7 @@ const menu: typeof menuRu = {
   'menu.tag.all': 'All',
   'menu.first-name': 'Alyona',
   'menu.last-name': 'Rychagova',
+  'menu.process': 'Process',
 };
 
 const projects: typeof projectsRu = {
