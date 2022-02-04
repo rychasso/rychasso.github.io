@@ -99,16 +99,6 @@ export function getProjects(): IProject[] {
     },
     getTheMiracleBeastProject(),
     {
-      id: 'Childhood-Trading',
-      title: TranslateService.localize('project.Childhood-Trading.title'),
-      tags: [],
-      figures: [
-        {
-          src: getPath('Childhood-Trading/1.jpg'),
-        },
-      ],
-    },
-    {
       id: 'Karaoke',
       title: TranslateService.localize('project.Karaoke.title'),
       tags: [],
@@ -245,19 +235,6 @@ export function getProjects(): IProject[] {
       figures: [
         {
           src: getPath('Alenushka/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Fox-Family',
-      title: TranslateService.localize('project.Fox-Family.title'),
-      tags: [],
-      figures: [
-        {
-          src: getPath('Fox-Family/1.jpg'),
-        },
-        {
-          src: getPath('Fox-Family/2.jpg'),
         },
       ],
     },

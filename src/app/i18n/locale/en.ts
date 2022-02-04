@@ -30,7 +30,6 @@ const projects: typeof projectsRu = {
   'project.THE-MIRACLE-BEAST.templates-description': 'Prepare sketches',
   'project.THE-MIRACLE-BEAST.results-description': 'Results',
 
-  'project.Childhood-Trading.title': 'Trading',
   'project.Karaoke.title': 'Karaoke',
   'project.Attraction.title': 'Attraction',
   'project.The-Dreamers.title': 'The Dreamers',
@@ -41,7 +40,6 @@ const projects: typeof projectsRu = {
   'project.Masha-And-Seeds.title': 'Masha and the seeds',
   'project.Semen-Mikhailovich-And-Vanya.title': 'Semen Mikhailovich and Vanya',
   'project.Alenushka.title': 'Alenushka',
-  'project.Fox-Family.title': 'Fox family',
   'project.Misha-The-President.title': 'Misha the President',
   'project.Girl-With-Peaches.title': 'Girl with peaches',
   'project.Mona-Lisa.title': 'Mona Lisa',

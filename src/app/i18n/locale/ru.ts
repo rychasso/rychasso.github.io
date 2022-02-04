@@ -25,7 +25,6 @@ export const projects = {
   'project.THE-MIRACLE-BEAST.templates-description': 'Подготовка экскизов',
   'project.THE-MIRACLE-BEAST.results-description': 'Финальные работы',
 
-  'project.Childhood-Trading.title': 'Торговля',
   'project.Karaoke.title': 'Караоке',
   'project.Attraction.title': 'Аттракцион',
   'project.The-Dreamers.title': 'Мечтатели',
@@ -36,7 +35,6 @@ export const projects = {
   'project.Masha-And-Seeds.title': 'Маша и семена',
   'project.Semen-Mikhailovich-And-Vanya.title': 'Семён Михаилович и Ваня',
   'project.Alenushka.title': 'Алёнушка',
-  'project.Fox-Family.title': 'Семейный портрет',
   'project.Misha-The-President.title': 'Президент Миша',
   'project.Girl-With-Peaches.title': 'Девочка с персиками',
   'project.Mona-Lisa.title': 'Мона Лиза',
