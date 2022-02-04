@@ -59,5 +59,9 @@ export class AppLayoutComponent {
       label: TranslateService.localize('menu.tag.characters'),
       href: `/tags/${EProjectTag.character}`,
     },
+    {
+      label: TranslateService.localize('menu.tag.postcards'),
+      href: `/tags/${EProjectTag.postcards}`,
+    },
   ];
 }

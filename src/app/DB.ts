@@ -10,6 +10,7 @@ import { getBedtimeStoriesForKidsProject } from './DB/Bedtime-Stories-For-Kids';
 import { getInTheForestProject } from './DB/In-The-Forest';
 import { getChemistProject } from './DB/Chemist';
 import { getEatWithTeaProject } from './DB/Eat-With-Tea';
+import { getBearHousesProject } from './DB/Bear-Houses';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -21,6 +22,7 @@ function renderLink(href: string, content: string): string {
 
 export function getProjects(): IProject[] {
   return [
+    getBearHousesProject(),
     getEatWithTeaProject(),
     getInTheForestProject(),
     getBedtimeStoriesForKidsProject(),
@@ -87,7 +89,7 @@ export function getProjects(): IProject[] {
     {
       id: 'The-Beatles',
       title: 'The Beatles',
-      tags: [],
+      tags: [EProjectTag.postcards],
       figures: [
         {
           src: getPath('The-Beatles/1.jpg'),
@@ -196,7 +198,7 @@ export function getProjects(): IProject[] {
     {
       id: 'Storm',
       title: TranslateService.localize('project.Storm.title'),
-      tags: [],
+      tags: [EProjectTag.postcards],
       posterSrc: getPath('Storm/poster.jpg'),
       figures: [
         {

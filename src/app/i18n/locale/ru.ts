@@ -11,6 +11,7 @@ export const menu = {
   'menu.tag.magazine': 'Для журналов',
   'menu.tag.book': 'Для книг',
   'menu.tag.all': 'Все',
+  'menu.tag.postcards': 'Открытки',
   'menu.first-name': 'Алёна',
   'menu.last-name': 'Рычагова',
   'menu.process': 'Процесс',
@@ -64,6 +65,7 @@ export const projects = {
   'project.In-The-Forest.title': 'В лесу',
   'project.Eat-With-Tea.title': 'К чаю',
   'project.Chemist.title': 'Химик',
+  'project.Bear-Houses.title': 'Медвежьи домики',
 };
 
 const locale = {
