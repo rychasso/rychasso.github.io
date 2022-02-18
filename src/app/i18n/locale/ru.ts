@@ -60,10 +60,12 @@ export const projects = {
   'project.Christmas-2021.title': 'Рождество',
   'project.Holiday-Comes-To-Us.title': 'Праздник к нам приходит',
   'project.Bedtime-Stories-For-Kids.title': 'Bedtime stories for kids',
+  'project.Bedtime-Stories-For-Kids-2.title': 'Bedtime stories for kids 2',
   'project.In-The-Forest.title': 'В лесу',
   'project.Eat-With-Tea.title': 'К чаю',
   'project.Chemist.title': 'Химик',
   'project.Bear-Houses.title': 'Медвежьи домики',
+  'project.Visiting-Naturesheet.title': 'В гостях у Натуралистика',
 };
 
 const locale = {

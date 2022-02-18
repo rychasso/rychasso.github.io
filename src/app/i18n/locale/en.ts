@@ -65,10 +65,12 @@ const projects: typeof projectsRu = {
   'project.Christmas-2021.title': 'Christmas',
   'project.Holiday-Comes-To-Us.title': 'Holiday comes to us',
   'project.Bedtime-Stories-For-Kids.title': 'Bedtime stories for kids',
+  'project.Bedtime-Stories-For-Kids-2.title': 'Bedtime stories for kids 2',
   'project.In-The-Forest.title': 'In the forest',
   'project.Eat-With-Tea.title': 'For tea',
   'project.Chemist.title': 'Chemist',
   'project.Bear-Houses.title': 'Bear houses',
+  'project.Visiting-Naturesheet.title': 'Visiting «Naturesheet»',
 };
 
 const locales: typeof ru = {
