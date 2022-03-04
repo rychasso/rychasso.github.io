@@ -66,6 +66,8 @@ export const projects = {
   'project.Chemist.title': 'Химик',
   'project.Bear-Houses.title': 'Медвежьи домики',
   'project.Visiting-Naturesheet.title': 'В гостях у Натуралистика',
+  'project.Baby-Book.title': 'Книжка-Малышка',
+  'project.Baby-Book.description': 'Книжка для детского журнала, которую дети смогут вырезать и собрать самостоятельно',
 };
 
 const locale = {

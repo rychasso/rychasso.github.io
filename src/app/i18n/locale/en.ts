@@ -71,6 +71,9 @@ const projects: typeof projectsRu = {
   'project.Chemist.title': 'Chemist',
   'project.Bear-Houses.title': 'Bear houses',
   'project.Visiting-Naturesheet.title': 'Visiting «Naturesheet»',
+
+  'project.Baby-Book.title': 'Baby-Book',
+  'project.Baby-Book.description': 'DYI Book for children',
 };
 
 const locales: typeof ru = {
