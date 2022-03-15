@@ -14,6 +14,7 @@ import { getBearHousesProject } from './DB/Bear-Houses';
 import { getBedtimeStoriesForKids2Project } from './DB/Bedtime-Stories-For-Kids-2';
 import { getVisitingNaturesheetProject } from './DB/Visiting-Naturesheet';
 import { getBabyBookProject } from './DB/Baby-Book';
+import { getBedtimeStoriesForKids3Project } from './DB/Bedtime-Stories-For-Kids-3';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -25,6 +26,7 @@ function renderLink(href: string, content: string): string {
 
 export function getProjects(): IProject[] {
   return [
+    getBedtimeStoriesForKids3Project(),
     getBabyBookProject(),
     getBedtimeStoriesForKids2Project(),
     getBearHousesProject(),

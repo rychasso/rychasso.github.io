@@ -66,6 +66,7 @@ const projects: typeof projectsRu = {
   'project.Holiday-Comes-To-Us.title': 'Holiday comes to us',
   'project.Bedtime-Stories-For-Kids.title': 'Bedtime stories for kids',
   'project.Bedtime-Stories-For-Kids-2.title': 'Bedtime stories for kids 2',
+  'project.Bedtime-Stories-For-Kids-3.title': 'Bedtime stories for kids 3',
   'project.In-The-Forest.title': 'In the forest',
   'project.Eat-With-Tea.title': 'For tea',
   'project.Chemist.title': 'Chemist',
