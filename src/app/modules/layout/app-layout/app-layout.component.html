@@ -35,10 +35,20 @@
 <footer>
   <ul>
     <li *ngFor="let socialLink of socialLinks">
-      <a [href]="[socialLink.href]" target="_blank" class="link">
-        <app-icon [name]="socialLink.iconName" class="social-link-icon"></app-icon>
-        <span>{{ socialLink.label }}</span>
+      <a *ngIf="socialLink.href" [href]="[socialLink.href]" target="_blank" class="link">
+        <ng-container *ngTemplateOutlet="iconContent; context: {$implicit: socialLink}"></ng-container>
       </a>
+      <span  *ngIf="!socialLink.href">
+        <ng-container *ngTemplateOutlet="iconContent; context: {$implicit: socialLink}"></ng-container>
+      </span>
     </li>
   </ul>
 </footer>
+
+<ng-template #iconContent let-link>
+  <ng-container *ngIf="asSocialLink(link) as socialLink">
+    <app-icon *ngIf="socialLink.iconName" [name]="socialLink.iconName" class="social-link-icon"></app-icon>
+    <span>{{ socialLink.label }}</span>
+    <div *ngIf='socialLink.description'><small>{{socialLink.description}}</small></div>
+  </ng-container>
+</ng-template>

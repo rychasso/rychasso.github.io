@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { DomSanitizer } from '@angular/platform-browser';
 
-export type TIcon = 'behance' | 'instagram' | 'images' | 'telegram' | 'email';
+export type TIcon = 'behance' | 'images' | 'telegram' | 'email';
 
 @Component({
   selector: 'app-icon',
@@ -12,7 +12,7 @@ export type TIcon = 'behance' | 'instagram' | 'images' | 'telegram' | 'email';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IconComponent implements OnChanges {
-  @Input() name: TIcon = 'instagram';
+  @Input() name: TIcon = 'email';
 
   private iconName$ = new BehaviorSubject<TIcon>(this.name);
 

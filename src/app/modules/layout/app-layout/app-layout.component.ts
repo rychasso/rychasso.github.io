@@ -6,8 +6,10 @@ import { TranslateService } from '@i18n/translate.service';
 
 interface ISocialLink {
   label: string;
-  iconName: TIcon;
-  href: string;
+  iconName?: TIcon;
+  href?: string;
+  accountName?: string;
+  description?: string;
 }
 
 interface ISubmenu {
@@ -25,11 +27,6 @@ export class AppLayoutComponent {
 
   public readonly socialLinks: ISocialLink[] = [
     {
-      label: 'instagram',
-      iconName: 'instagram',
-      href: environment.INSTAGRAM,
-    },
-    {
       label: 'behance',
       iconName: 'behance',
       href: environment.BEHANCE,
@@ -43,6 +40,10 @@ export class AppLayoutComponent {
       label: environment.EMAIL,
       iconName: 'email',
       href: `mailto:${environment.EMAIL}`,
+    },
+    {
+      label: environment.GENERIC_ACCOUNT_NAME,
+      description: TranslateService.localize('menu.footer.in-most-services'),
     },
   ];
 
@@ -64,4 +65,8 @@ export class AppLayoutComponent {
       href: `/tags/${EProjectTag.postcards}`,
     },
   ];
+
+  public asSocialLink(v: any): ISocialLink {
+    return v as ISocialLink;
+  }
 }

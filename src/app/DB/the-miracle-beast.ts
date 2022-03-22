@@ -12,10 +12,7 @@ export const getTheMiracleBeastProject: () => IProject = () => ({
   tags: [EProjectTag.books, EProjectTag.character],
   description: `
         <p>${TranslateService.localize('project.THE-MIRACLE-BEAST.description', {
-    link: renderLink(
-      'https://www.instagram.com/burakelena/',
-      '@burakelena',
-    )
+    link: '@burakelena'
   })}</p>
       `,
   posterSrc: getSrc('poster.jpg'),
