@@ -1,10 +1,10 @@
-@import "variables";
+@use "variables";
 
 :root {
-  --main-bg-color: #{$colorWhite};
-  --main-text-color: #{$colorAbyss};
-  --link-hover-border-color: #{$colorAbyss};
+  --main-bg-color: #{variables.$colorWhite};
+  --main-text-color: #{variables.$colorAbyss};
+  --link-hover-border-color: #{variables.$colorAbyss};
   --project-list-item-shadow-color: #e2e2e6;
   --project-list-item-text-background: rgba(255, 255, 255, 0.75);
-  --project-list-item-text-color: #{$colorAbyss};
+  --project-list-item-text-color: #{variables.$colorAbyss};
 }

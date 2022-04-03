@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $baseFontSizePx: 16;
 
 /* Set provided size in Px to value in Rem. Used $baseFontSizePx just for calculation of Rem value */
@@ -6,7 +8,7 @@ $baseFontSizePx: 16;
 
   @if ($sizeMobilePx != 0) {
     @media all and (max-width: 768px) {
-      font-size: #{$sizeMobilePx/$baseFontSizePx}rem;
+      font-size: #{math.div($sizeMobilePx, $baseFontSizePx)}rem;
     }
   }
 }
