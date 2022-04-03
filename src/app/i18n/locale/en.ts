@@ -19,7 +19,7 @@ const menu: typeof menuRu = {
   'menu.first-name': 'Alyona',
   'menu.last-name': 'Rychagova',
   'menu.process': 'Process',
-  'menu.footer.in-most-services': 'In most services',
+  'menu.footer.in-most-services': 'On all services',
 };
 
 const projects: typeof projectsRu = {

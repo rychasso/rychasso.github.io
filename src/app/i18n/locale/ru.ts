@@ -15,7 +15,7 @@ export const menu = {
   'menu.first-name': 'Алёна',
   'menu.last-name': 'Рычагова',
   'menu.process': 'Процесс',
-  'menu.footer.in-most-services': 'В большинстве сервисов',
+  'menu.footer.in-most-services': 'Во всех сервисах',
 };
 
 export const projects = {
