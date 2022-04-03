@@ -1,6 +1,6 @@
 @use "sass:math";
-@import "grid";
-@import "variables";
+@use "grid";
+@use "variables";
 
 :host {
   display: grid;
@@ -12,13 +12,13 @@
   grid-template-rows: auto auto 1fr auto;
   min-height: 100vh;
 
-  @include isMoreThan("mobile") {
+  @include grid.isMoreThan("mobile") {
     grid-template-areas:
       "header main"
       "nav main"
       "footer main";
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: $layoutNavWidth 1fr;
+    grid-template-columns: variables.$layoutNavWidth 1fr;
     height: 100vh;
     padding: 0.5rem;
   }
@@ -26,7 +26,7 @@
 
 header {
   grid-area: header;
-  padding: $layoutElementsGutter;
+  padding: variables.$layoutElementsGutter;
 }
 
 .name {
@@ -48,21 +48,21 @@ header {
 
 nav {
   grid-area: nav;
-  padding: $layoutElementsGutter;
+  padding: variables.$layoutElementsGutter;
   font-weight: 200;
 
   .menu {
     & > li {
       font-size: 1.25rem;
-      margin-bottom: $layoutElementsGutter;
+      margin-bottom: variables.$layoutElementsGutter;
     }
   }
 
   .submenu {
-    padding-left: $layoutElementsGutter;
+    padding-left: variables.$layoutElementsGutter;
     font-size: 1rem;
     & > li {
-      margin-top: math.div($layoutElementsGutter, 2);
+      margin-top: math.div(variables.$layoutElementsGutter, 2);
     }
   }
 
@@ -73,7 +73,7 @@ nav {
 
 footer {
   grid-area: footer;
-  padding: $layoutElementsGutter;
+  padding: variables.$layoutElementsGutter;
 
   li {
     &:not(:last-child) {
@@ -94,5 +94,5 @@ footer {
 main {
   grid-area: main;
   overflow-y: auto;
-  padding: $layoutElementsGutter;
+  padding: variables.$layoutElementsGutter;
 }

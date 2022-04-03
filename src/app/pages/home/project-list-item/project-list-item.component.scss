@@ -1,4 +1,4 @@
-@import "grid";
+@use "grid";
 
 section {
   height: 100%;
@@ -6,7 +6,7 @@ section {
   overflow: hidden;
   box-shadow: 4px 3px 10px 0 var(--project-list-item-shadow-color);
 
-  @include isMoreThan("mobile") {
+  @include grid.isMoreThan("mobile") {
     height: 0;
     padding-bottom: 100%;
   }
@@ -15,7 +15,7 @@ section {
 .image-backdrop-desktop {
   display: none;
 
-  @include isMoreThan("mobile") {
+  @include grid.isMoreThan("mobile") {
     position: absolute;
     background-position: center center;
     background-size: cover;
@@ -36,7 +36,7 @@ section {
 .image-backdrop-mobile {
   display: block;
 
-  @include isMoreThan("mobile") {
+  @include grid.isMoreThan("mobile") {
     display: none;
   }
 }

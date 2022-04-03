@@ -1,12 +1,12 @@
-@import "grid";
-@import "variables";
+@use "grid";
+@use "variables";
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: $layoutElementsGutter;
+  grid-gap: variables.$layoutElementsGutter;
 
-  @include isMoreThan("mobile") {
+  @include grid.isMoreThan("mobile") {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }

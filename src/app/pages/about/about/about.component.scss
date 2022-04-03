@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 .about-me-row {
   display: grid;
@@ -6,7 +6,7 @@
     "photo"
     "text"
   ;
-  grid-gap: $layoutElementsGutter;
+  grid-gap: variables.$layoutElementsGutter;
   max-width: 40rem;
 }
 
