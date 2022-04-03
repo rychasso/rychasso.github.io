@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "grid";
 @import "variables";
 
@@ -61,7 +62,7 @@ nav {
     padding-left: $layoutElementsGutter;
     font-size: 1rem;
     & > li {
-      margin-top: $layoutElementsGutter / 2;
+      margin-top: math.div($layoutElementsGutter, 2);
     }
   }
 
