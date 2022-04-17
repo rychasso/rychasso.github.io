@@ -44,9 +44,6 @@ export const getTheMiracleBeastProject: () => IProject = () => ({
       src: getSrc('book-1.jpg'),
     },
     {
-      src: getSrc('book-2.jpg'),
-    },
-    {
       src: getSrc('book-3.jpg'),
     },
     {
@@ -56,19 +53,7 @@ export const getTheMiracleBeastProject: () => IProject = () => ({
       src: getSrc('book-5.jpg'),
     },
     {
-      src: getSrc('book-6.jpg'),
-    },
-    {
-      src: getSrc('book-7.jpg'),
-    },
-    {
       src: getSrc('book-8.jpg'),
-    },
-    {
-      src: getSrc('book-9.jpg'),
-    },
-    {
-      src: getSrc('book-10.jpg'),
     },
     {
       src: getSrc('book-11.jpg'),
