@@ -117,16 +117,6 @@ export function getProjects(): IProject[] {
       ],
     },
     {
-      id: 'Attraction',
-      title: TranslateService.localize('project.Attraction.title'),
-      tags: [],
-      figures: [
-        {
-          src: getPath('Attraction/1.jpg'),
-        },
-      ],
-    },
-    {
       id: 'The-Dreamers',
       title: TranslateService.localize('project.The-Dreamers.title'),
       tags: [EProjectTag.magazine],
@@ -150,30 +140,6 @@ export function getProjects(): IProject[] {
         {
           src: getPath('The-Dreamers/2.jpg'),
           description: 'Вариант 2'
-        },
-      ],
-    },
-    {
-      id: 'Kindergarten',
-      title: TranslateService.localize('project.Kindergarten.title'),
-      tags: [EProjectTag.magazine],
-      figures: [
-        {
-          src: getPath('Kindergarten/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Lessons-Outside',
-      title: TranslateService.localize('project.Lessons-Outside.title'),
-      tags: [EProjectTag.magazine],
-      description: `
-        ${getUpsideDownMagazineDescription()}
-        <p>Я&nbsp;тут подумала, что если&nbsp;бы в&nbsp;тёплые весенние дни или в&nbsp;начале лета, когда у&nbsp;некоторых в&nbsp;школах ещё учёба не&nbsp;закончилась, практиковались&nbsp;бы занятия на&nbsp;свежем воздухе.</p>
-      `,
-      figures: [
-        {
-          src: getPath('Lessons-Outside/1.jpg'),
         },
       ],
     },
@@ -233,28 +199,6 @@ export function getProjects(): IProject[] {
       figures: [
         {
           src: getPath('Semen-Mikhailovich-And-Vanya/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Alenushka',
-      title: TranslateService.localize('project.Alenushka.title'),
-      tags: [],
-      figures: [
-        {
-          src: getPath('Alenushka/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Winter-Street',
-      title: TranslateService.localize('project.Winter-Street.title'),
-      tags: [],
-      description:
-        '<p>Иллюстрация, подготовленная для Московского дома подарков для новогодней продукции.</p>',
-      figures: [
-        {
-          src: getPath('Winter-Street/1.jpg'),
         },
       ],
     },
