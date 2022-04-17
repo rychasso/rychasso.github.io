@@ -44,6 +44,11 @@ export const projects = {
   'project.Bitterly.title': 'Горько',
   'project.Shaggy-Creeper.title': 'Мохнатая ползучка',
   'project.Emperor.title': 'Император',
+  'project.Look-At-Space.title': 'Открытие',
+  'project.Pirates.title': 'Пираты',
+  'project.Deep-Dive.title': 'Пловец',
+  'project.Mermaid-Vs-Plastic.title': 'Проблемы экологии',
+  'project.Poems.title': 'Стихи',
 
   'project.What-Is-Happiness.title': 'Что такое счастье?',
   'project.What-Is-Happiness.prepare-description': 'Подготовка персонажей',
@@ -53,7 +58,8 @@ export const projects = {
   'project.What-Is-Happiness.book-cover': 'Подготовка обложки',
 
   'project.Samovar.title': 'Самовар',
-  'project.Christmas-2021.title': 'Рождество',
+  'project.Christmas-2021.title': 'Рождество 2021',
+  'project.Christmas-2022.title': 'Рождество 2022',
   'project.Holiday-Comes-To-Us.title': 'Праздник к нам приходит',
   'project.Bedtime-Stories-For-Kids.title': 'Bedtime stories for kids',
   'project.Bedtime-Stories-For-Kids-2.title': 'Bedtime stories for kids 2',

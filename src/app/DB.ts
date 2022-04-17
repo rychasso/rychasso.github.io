@@ -5,6 +5,7 @@ import { getTheMiracleBeastProject } from './DB/the-miracle-beast';
 import { getSamovarProject } from './DB/Samovar';
 import { getUpsideDownMagazineDescription } from './DB/_helpers';
 import { getChristmas2021Project } from './DB/Christmas-2021';
+import { getChristmas2022Project } from './DB/Christmas-2022';
 import { getHolidayComesToUsProject } from './DB/Holiday-Comes-To-Us';
 import { getBedtimeStoriesForKidsProject } from './DB/Bedtime-Stories-For-Kids';
 import { getInTheForestProject } from './DB/In-The-Forest';
@@ -15,27 +16,35 @@ import { getBedtimeStoriesForKids2Project } from './DB/Bedtime-Stories-For-Kids-
 import { getVisitingNaturesheetProject } from './DB/Visiting-Naturesheet';
 import { getBabyBookProject } from './DB/Baby-Book';
 import { getBedtimeStoriesForKids3Project } from './DB/Bedtime-Stories-For-Kids-3';
+import { getTheBeatlesProject } from './DB/The-Beatles';
+import { getLookAtSpaceProject } from './DB/Look-At-Space';
+import { getPiratesProject } from './DB/Pirates';
+import { getDeepDiveProject } from './DB/Deep-Dive';
+import { getMermaidVsPlasticProject } from './DB/Mermaid-Vs-Plastic';
+import { getPoemsProject } from './DB/Poems';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
 }
 
-function renderLink(href: string, content: string): string {
-  return `<a class="link" href="${href}" target="_blank" ><span><b>${content}</b></span></a>`;
-}
-
 export function getProjects(): IProject[] {
   return [
+    getPoemsProject(),
+    getMermaidVsPlasticProject(),
+    getPiratesProject(),
     getBedtimeStoriesForKids3Project(),
     getBabyBookProject(),
     getBedtimeStoriesForKids2Project(),
     getBearHousesProject(),
+    getLookAtSpaceProject(),
     getVisitingNaturesheetProject(),
+    getBedtimeStoriesForKidsProject(),
     getEatWithTeaProject(),
     getInTheForestProject(),
-    getBedtimeStoriesForKidsProject(),
     getWhatIsHappinessProject(),
+    getDeepDiveProject(),
     getChemistProject(),
+    getChristmas2022Project(),
     getHolidayComesToUsProject(),
     getChristmas2021Project(),
     getSamovarProject(),
@@ -57,7 +66,6 @@ export function getProjects(): IProject[] {
       description: `
         ${getUpsideDownMagazineDescription()}
         <p>
-          <em>
             Мохнатую ползучку <br>
             Я в садике нашла. <br>
             Мохнатую ползучку <br>
@@ -74,7 +82,6 @@ export function getProjects(): IProject[] {
             В берёзовых лесах <br>
             Мохнатая ползучка <br>
             О двадцати ногах.
-          </em>
         </p>
     `,
       figures: [
@@ -94,17 +101,7 @@ export function getProjects(): IProject[] {
         },
       ],
     },
-    {
-      id: 'The-Beatles',
-      title: 'The Beatles',
-      tags: [EProjectTag.postcards],
-      figures: [
-        {
-          src: getPath('The-Beatles/1.jpg'),
-          description: `<p>${renderLink('https://www.pinterest.ru/pin/692147036484874459', 'Оригинал фотографии')} группы The Beatles</p>`,
-        },
-      ],
-    },
+    getTheBeatlesProject(),
     getTheMiracleBeastProject(),
     {
       id: 'Karaoke',
@@ -122,14 +119,14 @@ export function getProjects(): IProject[] {
       tags: [EProjectTag.magazine],
       description: `
         ${getUpsideDownMagazineDescription()}
-        <p><em>Станет рыцарь суперменом, <br>
+        <p>Станет рыцарь суперменом, <br>
             Станет Боингом дракон... <br>
             Что ж, стандартная система, <br>
             Просто сказочный закон. <br>
             Но и в том, и в этом веке, <br>
             Продолжая славный ряд, <br>
             Вырастают Человеки <br>
-            Из мечтающих ребят.</em>
+            Из мечтающих ребят.
             </p>
     `,
       figures: [

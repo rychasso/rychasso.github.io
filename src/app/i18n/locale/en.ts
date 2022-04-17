@@ -49,6 +49,11 @@ const projects: typeof projectsRu = {
   'project.Bitterly.title': 'Bitterly',
   'project.Shaggy-Creeper.title': 'Shaggy-Creeper',
   'project.Emperor.title': 'Emperor',
+  'project.Look-At-Space.title': 'Discovery',
+  'project.Pirates.title': 'Pirates',
+  'project.Deep-Dive.title': 'Deep dive',
+  'project.Mermaid-Vs-Plastic.title': 'Ecology problems',
+  'project.Poems.title': 'Poems',
 
   'project.What-Is-Happiness.title': 'What is happiness?',
   'project.What-Is-Happiness.prepare-description': 'Characters search',
@@ -58,7 +63,8 @@ const projects: typeof projectsRu = {
   'project.What-Is-Happiness.book-cover': 'Book cover',
 
   'project.Samovar.title': 'Samovar',
-  'project.Christmas-2021.title': 'Christmas',
+  'project.Christmas-2021.title': 'Christmas 2021',
+  'project.Christmas-2022.title': 'Christmas 2022',
   'project.Holiday-Comes-To-Us.title': 'Holiday comes to us',
   'project.Bedtime-Stories-For-Kids.title': 'Bedtime stories for kids',
   'project.Bedtime-Stories-For-Kids-2.title': 'Bedtime stories for kids 2',
