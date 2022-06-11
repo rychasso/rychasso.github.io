@@ -32,10 +32,10 @@ function getPath(relativePath: string): string {
 
 export function getProjects(): IProject[] {
   return [
+    getGoodNightSleepyPlanetsProject(),
     getDifferencesGirlProject(),
     getDifferencesGirlSwimProject(),
     getMendeleevProject(),
-    getGoodNightSleepyPlanetsProject(),
     getPoemsProject(),
     getMermaidVsPlasticProject(),
     getPiratesProject(),
