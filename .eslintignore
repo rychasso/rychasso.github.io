@@ -1,0 +1,6 @@
+.eslintrc.js
+src/assets
+*.scss
+*.html
+*.svg
+CNAME

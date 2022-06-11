@@ -66,7 +66,7 @@ export class AppLayoutComponent {
     },
   ];
 
-  public asSocialLink(v: any): ISocialLink {
+  public asSocialLink(v: unknown): ISocialLink {
     return v as ISocialLink;
   }
 }
