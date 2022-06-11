@@ -9,7 +9,6 @@ import { getChristmas2022Project } from './DB/Christmas-2022';
 import { getHolidayComesToUsProject } from './DB/Holiday-Comes-To-Us';
 import { getBedtimeStoriesForKidsProject } from './DB/Bedtime-Stories-For-Kids';
 import { getInTheForestProject } from './DB/In-The-Forest';
-import { getChemistProject } from './DB/Chemist';
 import { getEatWithTeaProject } from './DB/Eat-With-Tea';
 import { getBearHousesProject } from './DB/Bear-Houses';
 import { getBedtimeStoriesForKids2Project } from './DB/Bedtime-Stories-For-Kids-2';
@@ -43,7 +42,6 @@ export function getProjects(): IProject[] {
     getInTheForestProject(),
     getWhatIsHappinessProject(),
     getDeepDiveProject(),
-    getChemistProject(),
     getChristmas2022Project(),
     getHolidayComesToUsProject(),
     getChristmas2021Project(),
@@ -87,17 +85,6 @@ export function getProjects(): IProject[] {
       figures: [
         {
           src: getPath('Shaggy-Creeper/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Bitterly',
-      title: TranslateService.localize('project.Bitterly.title'),
-      tags: [EProjectTag.magazine],
-      description: getUpsideDownMagazineDescription(),
-      figures: [
-        {
-          src: getPath('Bitterly/1.jpg'),
         },
       ],
     },
@@ -164,38 +151,6 @@ export function getProjects(): IProject[] {
       figures: [
         {
           src: getPath('Storm/1.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Masha-And-Seeds',
-      title: TranslateService.localize('project.Masha-And-Seeds.title'),
-      tags: [EProjectTag.books],
-      description: '<p>Иллюстрации к сказке &laquo;Как Маша посадила семена&raquo;</p>',
-      posterSrc: getPath('Masha-And-Seeds/poster.jpg'),
-      figures: [
-        {
-          src: getPath('Masha-And-Seeds/1.jpg'),
-        },
-        {
-          src: getPath('Masha-And-Seeds/2.jpg'),
-        },
-        {
-          src: getPath('Masha-And-Seeds/3.jpg'),
-        },
-        {
-          src: getPath('Masha-And-Seeds/4.jpg'),
-        },
-      ],
-    },
-    {
-      id: 'Semen-Mikhailovich-And-Vanya',
-      title: TranslateService.localize('project.Semen-Mikhailovich-And-Vanya.title'),
-      tags: [EProjectTag.magazine],
-      description: getUpsideDownMagazineDescription(),
-      figures: [
-        {
-          src: getPath('Semen-Mikhailovich-And-Vanya/1.jpg'),
         },
       ],
     },
