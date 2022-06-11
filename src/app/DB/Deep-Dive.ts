@@ -1,4 +1,4 @@
-import {EProjectTag, IProject} from '@models/Project';
+import { EProjectTag, IProject } from '@models/Project';
 import { TranslateService } from '@i18n/translate.service';
 import { assetsPathBuilder } from './_helpers';
 

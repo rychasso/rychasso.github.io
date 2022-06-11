@@ -5,20 +5,9 @@ import { RouterModule } from '@angular/router';
 import { IconModule } from '@modules/icon';
 import { TranslateModule } from '@i18n/translate.module';
 
-
-
 @NgModule({
-  declarations: [
-    AppLayoutComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild([]),
-    IconModule,
-    TranslateModule,
-  ],
-  exports: [
-    AppLayoutComponent
-  ]
+  declarations: [AppLayoutComponent],
+  imports: [CommonModule, RouterModule.forChild([]), IconModule, TranslateModule],
+  exports: [AppLayoutComponent],
 })
-export class LayoutModule { }
+export class LayoutModule {}

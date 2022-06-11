@@ -13,7 +13,7 @@ export const getMendeleevProject: () => IProject = () => ({
   tags: [EProjectTag.character],
   figures: [
     {
-      src: getSrc(`1.jpg`),
+      src: getSrc('1.jpg'),
     },
   ],
 });

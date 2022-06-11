@@ -1,6 +1,6 @@
-import {IProject} from '@models/Project';
-import {assetsPathBuilder, getUpsideDownMagazineDescription} from './_helpers';
-import {TranslateService} from '@i18n/translate.service';
+import { IProject } from '@models/Project';
+import { assetsPathBuilder, getUpsideDownMagazineDescription } from './_helpers';
+import { TranslateService } from '@i18n/translate.service';
 
 const id = 'Look-At-Space';
 

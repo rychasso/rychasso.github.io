@@ -11,7 +11,9 @@ export class AboutComponent implements OnInit {
   constructor(private pageMetaService: PageMetaService) {}
 
   ngOnInit(): void {
-    const title = `${TranslateService.localize('menu.about')} | ${TranslateService.localize('menu.first-name')} ${TranslateService.localize('menu.last-name')}`;
+    const title = `${TranslateService.localize('menu.about')} | ${TranslateService.localize(
+      'menu.first-name',
+    )} ${TranslateService.localize('menu.last-name')}`;
 
     this.pageMetaService.setTitle(title);
     this.pageMetaService.setDescription(

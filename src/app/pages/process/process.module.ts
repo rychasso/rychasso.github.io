@@ -4,15 +4,8 @@ import { ProcessComponent } from './process/process.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './process.routes';
 
-
-
 @NgModule({
-  declarations: [
-    ProcessComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes)
-  ]
+  declarations: [ProcessComponent],
+  imports: [CommonModule, RouterModule.forChild(routes)],
 })
-export class ProcessModule { }
+export class ProcessModule {}

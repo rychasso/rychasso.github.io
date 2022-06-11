@@ -1,6 +1,6 @@
-import {IProject} from '@models/Project';
-import {TranslateService} from '@i18n/translate.service';
-import {assetsPathBuilder} from './_helpers';
+import { IProject } from '@models/Project';
+import { TranslateService } from '@i18n/translate.service';
+import { assetsPathBuilder } from './_helpers';
 
 const id = 'Differences-Girl-Swim';
 
@@ -13,10 +13,10 @@ export const getDifferencesGirlSwimProject: () => IProject = () => ({
   tags: [],
   figures: [
     {
-      src: getSrc(`1.jpg`),
+      src: getSrc('1.jpg'),
     },
     {
-      src: getSrc(`2.jpg`),
+      src: getSrc('2.jpg'),
     },
   ],
 });

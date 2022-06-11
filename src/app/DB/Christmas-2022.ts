@@ -1,6 +1,6 @@
-import {EProjectTag, IProject} from '@models/Project';
-import {TranslateService} from '@i18n/translate.service';
-import {assetsPathBuilder, getUpsideDownMagazineDescription} from './_helpers';
+import { EProjectTag, IProject } from '@models/Project';
+import { TranslateService } from '@i18n/translate.service';
+import { assetsPathBuilder, getUpsideDownMagazineDescription } from './_helpers';
 
 const id = 'Christmas-2022';
 

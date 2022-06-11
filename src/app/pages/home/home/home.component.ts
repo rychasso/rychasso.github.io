@@ -17,7 +17,9 @@ export class HomeComponent implements OnInit {
   constructor(private route: ActivatedRoute, private pageMetaService: PageMetaService) {}
 
   ngOnInit(): void {
-    const title = `${TranslateService.localize('menu.portfolio')} | ${TranslateService.localize('menu.first-name')} ${TranslateService.localize('menu.last-name')}`;
+    const title = `${TranslateService.localize('menu.portfolio')} | ${TranslateService.localize(
+      'menu.first-name',
+    )} ${TranslateService.localize('menu.last-name')}`;
     this.pageMetaService.setTitle(title);
     this.pageMetaService.setDescription('Ознакомьтесь со списком моих работ');
   }

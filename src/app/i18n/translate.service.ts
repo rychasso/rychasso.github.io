@@ -21,7 +21,10 @@ export class TranslateService {
    * 2. Calling it like method
    * $localize([':@@some.key:', ':foo:', ':bar:', ':baz:', raw: [':@@some.key:', ':foo:', ':bar:', ':baz:']], 1, 2, 3)
    */
-  public static localize(key: keyof typeof ru, interpolateParams: Record<string, string | number> = {}): string {
+  public static localize(
+    key: keyof typeof ru,
+    interpolateParams: Record<string, string | number> = {},
+  ): string {
     const id = `:@@${key}:`;
     const raw: string[] = [id];
 

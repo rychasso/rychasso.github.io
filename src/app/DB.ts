@@ -127,11 +127,11 @@ export function getProjects(): IProject[] {
       figures: [
         {
           src: getPath('The-Dreamers/1.jpg'),
-          description: 'Вариант 1'
+          description: 'Вариант 1',
         },
         {
           src: getPath('The-Dreamers/2.jpg'),
-          description: 'Вариант 2'
+          description: 'Вариант 2',
         },
       ],
     },

@@ -1,8 +1,6 @@
-export const nouns = {
-};
+export const nouns = {};
 
-export const actions = {
-};
+export const actions = {};
 
 export const menu = {
   'menu.about': 'Обо мне',
@@ -20,7 +18,8 @@ export const menu = {
 
 export const projects = {
   'project.THE-MIRACLE-BEAST.title': 'Чюдо-Юдо',
-  'project.THE-MIRACLE-BEAST.description': 'Иллюстрации подготовлены по&nbsp;стихотворению &laquo;Чудо&mdash;Юдо&raquo; детского писателя Елены Бурак {$link}',
+  'project.THE-MIRACLE-BEAST.description':
+    'Иллюстрации подготовлены по&nbsp;стихотворению &laquo;Чудо&mdash;Юдо&raquo; детского писателя Елены Бурак {$link}',
   'project.THE-MIRACLE-BEAST.prepare-description': 'Подготовка персонажа',
   'project.THE-MIRACLE-BEAST.steps-description': 'Определение динамики, раскадровка, цвет',
   'project.THE-MIRACLE-BEAST.templates-description': 'Подготовка экскизов',
@@ -66,7 +65,8 @@ export const projects = {
   'project.Bear-Houses.title': 'Медвежьи домики',
   'project.Visiting-Naturesheet.title': 'В гостях у Натуралистика',
   'project.Baby-Book.title': 'Книжка-Малышка',
-  'project.Baby-Book.description': 'Книжка для детского журнала, которую дети смогут вырезать и собрать самостоятельно',
+  'project.Baby-Book.description':
+    'Книжка для детского журнала, которую дети смогут вырезать и собрать самостоятельно',
   'project.Good-Night-Sleepy-Planets.title': 'Спокойной ночи сонные планеты',
   'project.Mendeleev.title': 'Менделеев',
   'project.Differences-Girl.title': 'Найдите 10 отличий',

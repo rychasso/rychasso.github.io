@@ -10,8 +10,6 @@ import { getProjectFirstImage, IProject } from '@models/Project';
 export class ProjectListItemComponent {
   @Input() project!: IProject;
 
-  constructor() {}
-
   get posterUrl(): string | null {
     if (this.project.posterSrc) {
       return this.project.posterSrc;

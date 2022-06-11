@@ -25,7 +25,8 @@ const menu: typeof menuRu = {
 const projects: typeof projectsRu = {
   ...projectsRu,
   'project.THE-MIRACLE-BEAST.title': 'The Miracle Beast',
-  'project.THE-MIRACLE-BEAST.description': 'Illustrations made for &laquo;The Miracle Beast&raquo; poem written by Elena Burak {$link}',
+  'project.THE-MIRACLE-BEAST.description':
+    'Illustrations made for &laquo;The Miracle Beast&raquo; poem written by Elena Burak {$link}',
   'project.THE-MIRACLE-BEAST.prepare-description': 'Character search',
   'project.THE-MIRACLE-BEAST.steps-description': 'Dynamic, storyboard, color',
   'project.THE-MIRACLE-BEAST.templates-description': 'Prepare sketches',
@@ -83,7 +84,7 @@ const locales: typeof ru = {
   ...nouns,
   ...actions,
   ...menu,
-  ...projects
+  ...projects,
 };
 
 export default locales;

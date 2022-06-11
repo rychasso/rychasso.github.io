@@ -2,7 +2,14 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { pluck } from 'rxjs/operators';
 import { Observable, Subscription } from 'rxjs';
-import { getProjectFirstImage, IProject, IProjectFigureSet, IProjectFigure, isFigure, isFigureSet } from '@models/Project';
+import {
+  getProjectFirstImage,
+  IProject,
+  IProjectFigureSet,
+  IProjectFigure,
+  isFigure,
+  isFigureSet,
+} from '@models/Project';
 import { PageMetaService } from '@services/page-meta.service';
 import { TranslateService } from '@i18n/translate.service';
 
@@ -20,7 +27,9 @@ export class ProjectDetailsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.subscription = this.project$.subscribe((project) => {
-      const title = `${project.title} | ${TranslateService.localize('menu.first-name')} ${TranslateService.localize('menu.last-name')}`;
+      const title = `${project.title} | ${TranslateService.localize(
+        'menu.first-name',
+      )} ${TranslateService.localize('menu.last-name')}`;
 
       this.pageMetaService.setTitle(title);
 

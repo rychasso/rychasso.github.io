@@ -1,5 +1,5 @@
-import {EProjectTag, IProject} from '@models/Project';
-import {assetsPathBuilder, renderLink} from './_helpers';
+import { EProjectTag, IProject } from '@models/Project';
+import { assetsPathBuilder, renderLink } from './_helpers';
 
 const id = 'The-Beatles';
 
@@ -16,7 +16,10 @@ export const getTheBeatlesProject: () => IProject = () => ({
   figures: [
     {
       src: getSrc('1.jpg'),
-      description: `<p>${renderLink('https://www.pinterest.ru/pin/692147036484874459', 'Оригинал фотографии')} группы The Beatles</p>`,
+      description: `<p>${renderLink(
+        'https://www.pinterest.ru/pin/692147036484874459',
+        'Оригинал фотографии',
+      )} группы The Beatles</p>`,
     },
   ],
 });

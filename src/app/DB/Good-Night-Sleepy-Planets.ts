@@ -13,10 +13,10 @@ export const getGoodNightSleepyPlanetsProject: () => IProject = () => ({
   tags: [EProjectTag.books],
   figures: [
     {
-      src: getSrc(`cover.jpg`),
+      src: getSrc('cover.jpg'),
     },
-    ...(new Array(20)).fill(null).map((_, index) => ({
+    ...new Array(20).fill(null).map((_, index) => ({
       src: getSrc(`${index + 1}.jpg`),
-    }))
+    })),
   ],
 });

@@ -1,6 +1,6 @@
 import { EProjectTag, IProject } from '@models/Project';
 import { TranslateService } from '@i18n/translate.service';
-import { assetsPathBuilder, renderLink } from './_helpers';
+import { assetsPathBuilder } from './_helpers';
 
 const id = 'The-Miracle-Beast';
 
@@ -11,10 +11,10 @@ export const getTheMiracleBeastProject: () => IProject = () => ({
   title: TranslateService.localize('project.THE-MIRACLE-BEAST.title'),
   tags: [EProjectTag.books, EProjectTag.character],
   description: `
-        <p>${TranslateService.localize('project.THE-MIRACLE-BEAST.description', {
-    link: '@burakelena'
-  })}</p>
-      `,
+          <p>${TranslateService.localize('project.THE-MIRACLE-BEAST.description', {
+            link: '@burakelena',
+          })}</p>
+        `,
   posterSrc: getSrc('poster.jpg'),
   figures: [
     {
@@ -26,18 +26,11 @@ export const getTheMiracleBeastProject: () => IProject = () => ({
     },
     {
       title: TranslateService.localize('project.THE-MIRACLE-BEAST.steps-description'),
-      multipleSrc: [
-        getSrc('work-2.1.jpg'),
-        getSrc('work-2.2.jpg'),
-        getSrc('work-2.3.jpg'),
-      ],
+      multipleSrc: [getSrc('work-2.1.jpg'), getSrc('work-2.2.jpg'), getSrc('work-2.3.jpg')],
     },
     {
       title: TranslateService.localize('project.THE-MIRACLE-BEAST.templates-description'),
-      multipleSrc: [
-        getSrc('work-3.1.jpg'),
-        getSrc('work-3.2.jpg'),
-      ],
+      multipleSrc: [getSrc('work-3.1.jpg'), getSrc('work-3.2.jpg')],
     },
     {
       title: TranslateService.localize('project.THE-MIRACLE-BEAST.results-description'),
