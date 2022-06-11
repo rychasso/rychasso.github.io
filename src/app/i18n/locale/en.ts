@@ -73,6 +73,10 @@ const projects: typeof projectsRu = {
 
   'project.Baby-Book.title': 'Baby-Book',
   'project.Baby-Book.description': 'DYI Book for children',
+  'project.Good-Night-Sleepy-Planets.title': 'Good night sleepy planets',
+  'project.Mendeleev.title': 'Mendeleev',
+  'project.Differences-Girl.title': 'Find 10 differences',
+  'project.Differences-Girl-Swim.title': 'Find 10 differences',
 };
 
 const locales: typeof ru = {

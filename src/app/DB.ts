@@ -21,6 +21,10 @@ import { getPiratesProject } from './DB/Pirates';
 import { getDeepDiveProject } from './DB/Deep-Dive';
 import { getMermaidVsPlasticProject } from './DB/Mermaid-Vs-Plastic';
 import { getPoemsProject } from './DB/Poems';
+import { getGoodNightSleepyPlanetsProject } from './DB/Good-Night-Sleepy-Planets';
+import { getMendeleevProject } from './DB/Mendeleev';
+import { getDifferencesGirlProject } from './DB/Differences-Girl';
+import { getDifferencesGirlSwimProject } from './DB/Differences-Girl-Swim';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -28,6 +32,10 @@ function getPath(relativePath: string): string {
 
 export function getProjects(): IProject[] {
   return [
+    getDifferencesGirlProject(),
+    getDifferencesGirlSwimProject(),
+    getMendeleevProject(),
+    getGoodNightSleepyPlanetsProject(),
     getPoemsProject(),
     getMermaidVsPlasticProject(),
     getPiratesProject(),
