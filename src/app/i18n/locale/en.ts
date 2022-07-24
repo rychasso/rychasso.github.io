@@ -78,6 +78,7 @@ const projects: typeof projectsRu = {
   'project.Mendeleev.title': 'Mendeleev',
   'project.Differences-Girl.title': 'Find 10 differences',
   'project.Differences-Girl-Swim.title': 'Find 10 differences',
+  'project.Differences-Girl-Tea-Time.title': 'Find 10 differences',
 };
 
 const locales: typeof ru = {

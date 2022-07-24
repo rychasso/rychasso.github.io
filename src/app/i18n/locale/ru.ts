@@ -71,6 +71,7 @@ export const projects = {
   'project.Mendeleev.title': 'Менделеев',
   'project.Differences-Girl.title': 'Найдите 10 отличий',
   'project.Differences-Girl-Swim.title': 'Найдите 10 отличий',
+  'project.Differences-Girl-Tea-Time.title': 'Найдите 10 отличий',
 };
 
 const locale = {

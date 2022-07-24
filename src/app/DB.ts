@@ -25,6 +25,7 @@ import { getGoodNightSleepyPlanetsProject } from './DB/Good-Night-Sleepy-Planets
 import { getMendeleevProject } from './DB/Mendeleev';
 import { getDifferencesGirlProject } from './DB/Differences-Girl';
 import { getDifferencesGirlSwimProject } from './DB/Differences-Girl-Swim';
+import { getDifferencesGirlTeaTimeProject } from './DB/Differences-Girl-Tea-Time';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -32,6 +33,7 @@ function getPath(relativePath: string): string {
 
 export function getProjects(): IProject[] {
   return [
+    getDifferencesGirlTeaTimeProject(),
     getGoodNightSleepyPlanetsProject(),
     getDifferencesGirlProject(),
     getDifferencesGirlSwimProject(),
