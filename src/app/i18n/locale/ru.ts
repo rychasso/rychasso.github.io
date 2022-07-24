@@ -67,7 +67,7 @@ export const projects = {
   'project.Baby-Book.title': 'Книжка-Малышка',
   'project.Baby-Book.description':
     'Книжка для детского журнала, которую дети смогут вырезать и собрать самостоятельно',
-  'project.Good-Night-Sleepy-Planets.title': 'Спокойной ночи сонные планеты',
+  'project.Good-Night-Sleepy-Planets.title': 'Спокойной ночи, сонные планеты',
   'project.Mendeleev.title': 'Менделеев',
   'project.Differences-Girl.title': 'Найдите 10 отличий',
   'project.Differences-Girl-Swim.title': 'Найдите 10 отличий',
