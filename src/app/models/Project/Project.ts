@@ -16,6 +16,7 @@ export enum EProjectTag {
   books = 'books',
   magazine = 'magazine',
   postcards = 'postcards',
+  packing = 'packing',
 }
 
 export interface IProject {

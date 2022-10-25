@@ -16,6 +16,7 @@ const menu: typeof menuRu = {
   'menu.tag.book': 'Books',
   'menu.tag.all': 'All',
   'menu.tag.postcards': 'Postcards',
+  'menu.tag.packing': 'Packing',
   'menu.first-name': 'Alyona',
   'menu.last-name': 'Rychagova',
   'menu.process': 'Process',
@@ -79,6 +80,8 @@ const projects: typeof projectsRu = {
   'project.Differences-Girl.title': 'Find 10 differences',
   'project.Differences-Girl-Swim.title': 'Find 10 differences',
   'project.Differences-Girl-Tea-Time.title': 'Find 10 differences',
+  'project.Gnomes.title': 'Gnomes',
+  'project.Good-Night-Earth.title': 'Good night, Earth',
 };
 
 const locales: typeof ru = {

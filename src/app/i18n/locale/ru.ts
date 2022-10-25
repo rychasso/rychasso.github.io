@@ -10,6 +10,7 @@ export const menu = {
   'menu.tag.book': 'Для книг',
   'menu.tag.all': 'Все',
   'menu.tag.postcards': 'Открытки',
+  'menu.tag.packing': 'Упаковка',
   'menu.first-name': 'Алёна',
   'menu.last-name': 'Рычагова',
   'menu.process': 'Процесс',
@@ -72,6 +73,8 @@ export const projects = {
   'project.Differences-Girl.title': 'Найдите 10 отличий',
   'project.Differences-Girl-Swim.title': 'Найдите 10 отличий',
   'project.Differences-Girl-Tea-Time.title': 'Найдите 10 отличий',
+  'project.Gnomes.title': 'Гномы',
+  'project.Good-Night-Earth.title': 'Спокойной ночи, Земля',
 };
 
 const locale = {

@@ -64,6 +64,10 @@ export class AppLayoutComponent {
       label: TranslateService.localize('menu.tag.postcards'),
       href: `/tags/${EProjectTag.postcards}`,
     },
+    {
+      label: TranslateService.localize('menu.tag.packing'),
+      href: `/tags/${EProjectTag.packing}`,
+    },
   ];
 
   public asSocialLink(v: unknown): ISocialLink {
