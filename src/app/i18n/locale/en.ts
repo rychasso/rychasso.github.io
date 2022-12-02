@@ -82,6 +82,8 @@ const projects: typeof projectsRu = {
   'project.Differences-Girl-Tea-Time.title': 'Find 10 differences',
   'project.Gnomes.title': 'Gnomes',
   'project.Good-Night-Earth.title': 'Good night, Earth',
+  'project.Learning.title': 'Learning',
+  'project.Elf.title': 'Elf',
 };
 
 const locales: typeof ru = {
