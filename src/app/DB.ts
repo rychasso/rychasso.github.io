@@ -146,22 +146,6 @@ export function getProjects(): IProject[] {
       ],
     },
     {
-      id: 'Tailwind',
-      title: TranslateService.localize('project.Tailwind.title'),
-      tags: [EProjectTag.magazine],
-      description:
-        '<p>Иллюстрация подготовлена для детского журнала &laquo;Вверх Тормашками&raquo; по рассказу Ольги Клушиной &laquo;Попутный ветер&raquo;.</p>',
-      posterSrc: getPath('Tailwind/poster.jpg'),
-      figures: [
-        {
-          src: getPath('Tailwind/1.jpg'),
-        },
-        {
-          src: getPath('Tailwind/2.jpg'),
-        },
-      ],
-    },
-    {
       id: 'Storm',
       title: TranslateService.localize('project.Storm.title'),
       tags: [EProjectTag.postcards],
