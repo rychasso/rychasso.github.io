@@ -1,4 +1,8 @@
-export const nouns = {};
+export const nouns = {
+  'count-иллюстрация': '{$count} иллюстрация',
+  'count-иллюстрации': '{$count} иллюстрации',
+  'count-иллюстраций': '{$count} иллюстраций',
+};
 
 export const actions = {};
 

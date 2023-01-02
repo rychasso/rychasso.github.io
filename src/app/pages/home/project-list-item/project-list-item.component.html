@@ -3,10 +3,7 @@
   <img class="image-backdrop-mobile" [src]="posterUrl" alt="" />
 
   <div class="content">
-    <h3>{{project.title}}</h3>
-    <div *ngIf="project.figures.length > 1" class="icon-container">
-      <app-icon class="icon" name="images" [title]="project.figures.length + ' шт'"></app-icon>
-    </div>
+    <span *ngIf="project.figures.length > 1" class="count">{{getCountMessage()}}</span>
   </div>
 </section>
 

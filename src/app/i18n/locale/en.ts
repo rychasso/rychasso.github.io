@@ -5,7 +5,11 @@ import ru, {
   projects as projectsRu,
 } from './ru';
 
-const nouns: typeof nounsRu = {};
+const nouns: typeof nounsRu = {
+  'count-иллюстрация': '{$count} illustration',
+  'count-иллюстрации': '{$count} illustrations',
+  'count-иллюстраций': '{$count} illustrations',
+};
 const actions: typeof actionsRu = {};
 
 const menu: typeof menuRu = {

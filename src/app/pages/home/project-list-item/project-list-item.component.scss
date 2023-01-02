@@ -10,14 +10,14 @@ section {
     height: 0;
     padding-bottom: 100%;
 
-    .content {
-      transition: transform 0.25s;
-      transform: translateY(100%);
-    }
-
-    &:hover .content {
-      transform: translateY(0);
-    }
+    //.content {
+    //  transition: transform 0.25s;
+    //  transform: translateY(100%);
+    //}
+    //
+    //&:hover .content {
+    //  transform: translateY(0);
+    //}
   }
 }
 
@@ -50,8 +50,8 @@ section {
 .content {
 
   padding: 0.75rem;
-  background: var(--project-list-item-text-background);
-  color: var(--project-list-item-text-color);
+  //background: var(--project-list-item-text-background);
+  //color: var(--project-list-item-text-color);
   width: 100%;
   font-size: 0.65rem;
   display: flex;
@@ -86,4 +86,14 @@ section {
   }
 
 
+}
+
+.count {
+  border-radius: 10px;
+  border: 1px solid #d3d3d3;
+  padding: 2px 10px;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  background: var(--project-list-item-text-background);
 }
