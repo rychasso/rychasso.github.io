@@ -9,6 +9,17 @@ export class HomeProjectsByTagResolver implements Resolve<IProject[]> {
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<IProject[]> {
     const { tag } = route.params;
 
-    return of(getProjects().filter((project) => project.tags?.includes(tag)));
+    /**
+     * Move projects with tags above the rest
+     */
+    return of(
+      getProjects().sort((a, b) => {
+        if (a.tags?.includes(tag) && b.tags?.includes(tag)) {
+          return 0;
+        }
+
+        return a.tags?.includes(tag) ? -1 : 1;
+      }),
+    );
   }
 }
