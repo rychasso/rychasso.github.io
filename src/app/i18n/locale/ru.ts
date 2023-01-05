@@ -24,6 +24,7 @@ export const menu = {
   'menu.tag.packing': 'Упаковка',
   'menu.first-name': 'Алёна',
   'menu.last-name': 'Рычагова',
+  'menu.name-description': 'Детский иллюстратор',
   'menu.process': 'Процесс',
   'menu.footer.in-most-services': 'Во всех сервисах',
 };

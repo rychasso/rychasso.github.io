@@ -32,6 +32,7 @@ const menu: typeof menuRu = {
   'menu.tag.packing': 'Packing',
   'menu.first-name': 'Alyona',
   'menu.last-name': 'Rychagova',
+  'menu.name-description': 'Children illustrator',
   'menu.process': 'Process',
   'menu.footer.in-most-services': 'On all services',
 };

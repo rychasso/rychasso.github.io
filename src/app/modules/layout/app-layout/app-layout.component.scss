@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "grid";
+@use "utils";
 @use "variables";
 
 :host {
@@ -31,7 +32,7 @@ header {
 
 .name {
   line-height: 1.25;
-  font-size: 4rem;
+  font-size: utils.pxToRem(64);
   text-transform: uppercase;
   font-family: "Amatic SC", sans-serif;
   letter-spacing: 0.03em;
@@ -46,10 +47,16 @@ header {
   }
 }
 
+.name-description {
+  font-size: utils.pxToRem(17);
+  margin-top: 0.5rem;
+}
+
 nav {
   grid-area: nav;
   padding: variables.$layoutElementsGutter;
   font-weight: 200;
+  margin-top: 1rem;
 
   .menu {
     & > li {
