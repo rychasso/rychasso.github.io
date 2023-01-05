@@ -5,8 +5,8 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-column-gap: variables.$layoutElementsGutter;
-  grid-row-gap: variables.$layoutRowsGutter;
+  grid-column-gap: variables.$gridColumnsGutter;
+  grid-row-gap: variables.$gridRowsGutter;
 
   @include grid.isMoreThan("mobile") {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
