@@ -6,5 +6,14 @@
   --link-hover-border-color: #{variables.$colorAbyss};
   --project-list-item-shadow-color: #e2e2e6;
   --project-list-item-text-background: rgba(255, 255, 255, 0.85);
-  --project-list-item-text-color: #{variables.$colorAbyss};
+  --icon-fill: #{variables.$colorAbyss};
+
+  @media (prefers-color-scheme: dark) {
+    --main-bg-color: #{variables.$colorAbyss};
+    --main-text-color: #{variables.$colorCoast};
+    --link-hover-border-color: #{variables.$colorCoast};
+    --project-list-item-shadow-color: #494949;
+    --project-list-item-text-background: rgba(0, 0, 0, 0.55);
+    --icon-fill: #{variables.$colorCoast};
+  }
 }
