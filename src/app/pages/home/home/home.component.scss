@@ -1,12 +1,23 @@
 @use "grid";
 @use "variables";
 
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: variables.$layoutElementsGutter;
+  grid-column-gap: variables.$layoutElementsGutter;
+  grid-row-gap: variables.$layoutRowsGutter;
 
   @include grid.isMoreThan("mobile") {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+:host {
+  display: block;
+  max-width: 1600px;
+
+  @include grid.isMoreThan("mobile") {
+    padding-right: variables.$layoutElementsGutter;
   }
 }

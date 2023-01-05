@@ -1,9 +1,18 @@
 <section>
-  <div class="image-backdrop-desktop"  [style.backgroundImage]="'url(' + posterUrl + ')'"></div>
-  <img class="image-backdrop-mobile" [src]="posterUrl" alt="" />
+<!--  <div class="image-backdrop-desktop"  [style.backgroundImage]="'url(' + posterUrl + ')'"></div>-->
 
-  <div class="content">
+  <div class="image-container">
+    <div class="image-backdrop-desktop"  [style.backgroundImage]="'url(' + posterUrl + ')'"></div>
+    <img class="image-backdrop-mobile" [src]="posterUrl" alt="" />
     <span *ngIf="project.figures.length > 1" class="count">{{getCountMessage()}}</span>
+  </div>
+
+  <div class="card-info">
+    <h2 class="title">{{project.title}}</h2>
+
+    <ul class="tags-list">
+      <li *ngFor="let tag of project.tags" class="tag">#{{tag}}</li>
+    </ul>
   </div>
 </section>
 

@@ -1,5 +1,7 @@
 $breakpoints: (
   mobile: 720,
+  tablet: 1280,
+  fullHD: 1920,
 );
 
 @mixin isMoreThan($breakpoint) {

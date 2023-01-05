@@ -20,7 +20,7 @@
     grid-template-rows: auto 1fr auto;
     grid-template-columns: variables.$layoutNavWidth 1fr;
     height: 100vh;
-    padding: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 
@@ -94,5 +94,6 @@ footer {
 main {
   grid-area: main;
   overflow-y: auto;
-  padding: variables.$layoutElementsGutter;
+  padding-top: variables.$layoutElementsGutter;
+  padding-bottom: 2rem;
 }
