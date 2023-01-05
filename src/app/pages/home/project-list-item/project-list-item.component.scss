@@ -60,9 +60,10 @@
 
   .tag {
     margin-right: utils.pxToRem(16);
-    font-size: utils.pxToRem(12);
+    font-size: utils.pxToRem(14);
     display: inline-block;
     text-transform: lowercase;
+    color: var(--tag-color);
   }
 }
 

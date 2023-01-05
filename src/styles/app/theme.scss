@@ -5,8 +5,9 @@
   --main-text-color: #{variables.$colorAbyss};
   --link-hover-border-color: #{variables.$colorAbyss};
   --project-list-item-shadow-color: #e2e2e6;
-  --project-list-item-text-background: rgba(255, 255, 255, 0.85);
+  --project-list-item-text-background: rgba(255, 255, 255, 1);
   --icon-fill: #{variables.$colorAbyss};
+  --tag-color: #7a7a7a;
 
   @media (prefers-color-scheme: dark) {
     --main-bg-color: #{variables.$colorAbyss};
@@ -15,5 +16,6 @@
     --project-list-item-shadow-color: #494949;
     --project-list-item-text-background: rgba(0, 0, 0, 0.55);
     --icon-fill: #{variables.$colorCoast};
+    --tag-color: #b2b2b2;
   }
 }
