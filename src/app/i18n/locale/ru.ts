@@ -6,6 +6,13 @@ export const nouns = {
 
 export const actions = {};
 
+export const tags = {
+  'tag.characters': 'Персонажи',
+  'tag.magazine': 'Журнал',
+  'tag.book': 'Книга',
+  'tag.postcards': 'Открытка',
+  'tag.packing': 'Упаковка',
+};
 export const menu = {
   'menu.about': 'Обо мне',
   'menu.portfolio': 'Портфолио',
@@ -84,6 +91,7 @@ export const projects = {
 };
 
 const locale = {
+  ...tags,
   ...nouns,
   ...actions,
   ...menu,

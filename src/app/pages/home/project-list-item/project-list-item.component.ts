@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { getProjectFirstImage, IProject } from '@models/Project';
+import { EProjectTag, getProjectFirstImage, getTagLocalizedTitle, IProject } from '@models/Project';
 import { TranslateService } from '@i18n/translate.service';
 
 @Component({
@@ -17,6 +17,10 @@ export class ProjectListItemComponent {
     }
 
     return getProjectFirstImage(this.project) || null;
+  }
+
+  getTagLocalization(tag: EProjectTag): string {
+    return getTagLocalizedTitle(tag);
   }
 
   getCountMessage(): string {

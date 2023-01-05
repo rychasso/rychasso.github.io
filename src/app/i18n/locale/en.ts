@@ -3,6 +3,7 @@ import ru, {
   nouns as nounsRu,
   menu as menuRu,
   projects as projectsRu,
+  tags as tagsRu,
 } from './ru';
 
 const nouns: typeof nounsRu = {
@@ -11,6 +12,14 @@ const nouns: typeof nounsRu = {
   'count-иллюстраций': '{$count} illustrations',
 };
 const actions: typeof actionsRu = {};
+
+export const tags: typeof tagsRu = {
+  'tag.characters': 'Characters',
+  'tag.magazine': 'Magazine',
+  'tag.book': 'Book',
+  'tag.postcards': 'Postcards',
+  'tag.packing': 'Packing',
+};
 
 const menu: typeof menuRu = {
   'menu.about': 'About',
@@ -91,6 +100,7 @@ const projects: typeof projectsRu = {
 };
 
 const locales: typeof ru = {
+  ...tags,
   ...nouns,
   ...actions,
   ...menu,

@@ -1,3 +1,5 @@
+import { TranslateService } from '@i18n/translate.service';
+
 interface IProjectFigureBase {
   description?: string;
   title?: string;
@@ -49,4 +51,15 @@ export function isFigureSet(
   figureOrSet: IProjectFigure | IProjectFigureSet,
 ): figureOrSet is IProjectFigureSet {
   return 'multipleSrc' in figureOrSet;
+}
+
+export function getTagLocalizedTitle(tag: EProjectTag): string {
+  const map: Record<EProjectTag, () => string> = {
+    [EProjectTag.packing]: () => TranslateService.localize('tag.packing'),
+    [EProjectTag.books]: () => TranslateService.localize('tag.book'),
+    [EProjectTag.postcards]: () => TranslateService.localize('tag.postcards'),
+    [EProjectTag.character]: () => TranslateService.localize('tag.characters'),
+    [EProjectTag.magazine]: () => TranslateService.localize('tag.magazine'),
+  };
+  return map[tag]();
 }
