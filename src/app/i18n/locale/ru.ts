@@ -87,8 +87,9 @@ export const projects = {
   'project.Differences-Girl-Tea-Time.title': 'Найдите 10 отличий',
   'project.Gnomes.title': 'Гномы',
   'project.Good-Night-Earth.title': 'Спокойной ночи, Земля',
-  'project.Learning.title': 'Учимся',
+  'project.Learning.title': 'Школьники',
   'project.Elf.title': 'Эльф',
+  'project.Where-Are-Waves-From.title': 'Откуда берутся волны?',
 };
 
 const locale = {

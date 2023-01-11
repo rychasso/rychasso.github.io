@@ -96,8 +96,9 @@ const projects: typeof projectsRu = {
   'project.Differences-Girl-Tea-Time.title': 'Find 10 differences',
   'project.Gnomes.title': 'Gnomes',
   'project.Good-Night-Earth.title': 'Good night, Earth',
-  'project.Learning.title': 'Learning',
+  'project.Learning.title': 'Pupils',
   'project.Elf.title': 'Elf',
+  'project.Where-Are-Waves-From.title': 'Where are waves from?',
 };
 
 const locales: typeof ru = {

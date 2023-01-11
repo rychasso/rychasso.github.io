@@ -16,5 +16,11 @@ export const getLearningProject: () => IProject = () => ({
     {
       src: getSrc('1.jpg'),
     },
+    {
+      src: getSrc('2.jpg'),
+    },
+    {
+      src: getSrc('3.jpg'),
+    },
   ],
 });
