@@ -99,6 +99,7 @@ const projects: typeof projectsRu = {
   'project.Learning.title': 'Pupils',
   'project.Elf.title': 'Elf',
   'project.Where-Are-Waves-From.title': 'Where are waves from?',
+  'project.Happy-Birthday-28.title': 'Happy Birthday To Me',
 };
 
 const locales: typeof ru = {

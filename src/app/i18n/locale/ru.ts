@@ -90,6 +90,7 @@ export const projects = {
   'project.Learning.title': 'Школьники',
   'project.Elf.title': 'Эльф',
   'project.Where-Are-Waves-From.title': 'Откуда берутся волны?',
+  'project.Happy-Birthday-28.title': 'Happy Birthday To Me',
 };
 
 const locale = {

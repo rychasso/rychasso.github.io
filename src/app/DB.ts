@@ -31,6 +31,7 @@ import { getGoodNightEarthProject } from './DB/Good-Night-Earth';
 import { getElfProject } from './DB/Elf';
 import { getLearningProject } from './DB/Learning';
 import { getWhereAreWavesFromProject } from './DB/Where-Are-Waves-From';
+import { getHappyBirthday28Project } from './DB/Happy-Birthday-28';
 
 function getPath(relativePath: string): string {
   return `/assets/projects/${relativePath}`;
@@ -38,8 +39,9 @@ function getPath(relativePath: string): string {
 
 export function getProjects(): IProject[] {
   return [
-    getLearningProject(),
+    getHappyBirthday28Project(),
     getWhereAreWavesFromProject(),
+    getLearningProject(),
     getElfProject(),
     getGnomesProject(),
     getGoodNightEarthProject(),
