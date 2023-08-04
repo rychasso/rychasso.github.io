@@ -26,7 +26,13 @@ export const getGnomesProject: () => IProject = () => ({
       src: getSrc('4.jpg'),
     },
     {
-      src: getSrc('5.jpg'),
+      src: getSrc('5.png'),
+    },
+    {
+      src: getSrc('6.png'),
+    },
+    {
+      src: getSrc('7.png'),
     },
   ],
 });
