@@ -13,10 +13,8 @@ export const getGoodNightEarthProject: () => IProject = () => ({
   tags: [EProjectTag.books],
   description: `<p>Вторая книга про Лизу, которая путешествует</p>`,
   figures: [
-    ...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map(
-      (imageNumber) => ({
-        src: getSrc(`${imageNumber}.jpg`),
-      }),
-    ),
+    ...[1, 4, 5, 6, 7, 9, 10, 12, 13, 15, 16, 17, 18, 19, 20].map((imageNumber) => ({
+      src: getSrc(`${imageNumber}.jpg`),
+    })),
   ],
 });
