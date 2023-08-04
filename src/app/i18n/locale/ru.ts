@@ -91,6 +91,9 @@ export const projects = {
   'project.Elf.title': 'Эльф',
   'project.Where-Are-Waves-From.title': 'Откуда берутся волны?',
   'project.Happy-Birthday-28.title': 'Happy Birthday To Me',
+  'project.Feb-14.title': '14 Февраля',
+  'project.Dinosaur.title': 'Динозавр',
+  'project.Dragon.title': 'Дракон',
 };
 
 const locale = {
