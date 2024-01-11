@@ -1,44 +1,27 @@
-import { EProjectTag, IProject } from '@models/Project';
-import { TranslateService } from '@i18n/translate.service';
-import { getWhatIsHappinessProject } from './DB/what-is-happiness';
-import { getTheMiracleBeastProject } from './DB/the-miracle-beast';
-import { getSamovarProject } from './DB/Samovar';
-import { getUpsideDownMagazineDescription } from './DB/_helpers';
+import { IProject } from '@models/Project';
 import { getChristmas2021Project } from './DB/Christmas-2021';
-import { getChristmas2022Project } from './DB/Christmas-2022';
-import { getHolidayComesToUsProject } from './DB/Holiday-Comes-To-Us';
-import { getBedtimeStoriesForKidsProject } from './DB/Bedtime-Stories-For-Kids';
+import { getSamovarProject } from './DB/Samovar';
 // import { getInTheForestProject } from './DB/In-The-Forest';
 // import { getEatWithTeaProject } from './DB/Eat-With-Tea';
+import { getBabyBookProject } from './DB/Baby-Book';
 import { getBearHousesProject } from './DB/Bear-Houses';
 import { getBedtimeStoriesForKids2Project } from './DB/Bedtime-Stories-For-Kids-2';
-import { getVisitingNaturesheetProject } from './DB/Visiting-Naturesheet';
-import { getBabyBookProject } from './DB/Baby-Book';
 // import { getBedtimeStoriesForKids3Project } from './DB/Bedtime-Stories-For-Kids-3';
-import { getTheBeatlesProject } from './DB/The-Beatles';
-import { getLookAtSpaceProject } from './DB/Look-At-Space';
 import { getPiratesProject } from './DB/Pirates';
-import { getDeepDiveProject } from './DB/Deep-Dive';
 // import { getMermaidVsPlasticProject } from './DB/Mermaid-Vs-Plastic';
-import { getPoemsProject } from './DB/Poems';
-import { getGoodNightSleepyPlanetsProject } from './DB/Good-Night-Sleepy-Planets';
-import { getMendeleevProject } from './DB/Mendeleev';
-import { getDifferencesGirlProject } from './DB/Differences-Girl';
 import { getDifferencesGirlSwimProject } from './DB/Differences-Girl-Swim';
 import { getDifferencesGirlTeaTimeProject } from './DB/Differences-Girl-Tea-Time';
-import { getGnomesProject } from './DB/Gnomes';
-import { getGoodNightEarthProject } from './DB/Good-Night-Earth';
-import { getElfProject } from './DB/Elf';
-import { getLearningProject } from './DB/Learning';
-import { getWhereAreWavesFromProject } from './DB/Where-Are-Waves-From';
-import { getHappyBirthday28Project } from './DB/Happy-Birthday-28';
-import { getFeb14Project } from './DB/Feb-14';
 import { getDinosaurProject } from './DB/Dinosaur';
 import { getDragonProject } from './DB/Dragon';
-
-function getPath(relativePath: string): string {
-  return `/assets/projects/${relativePath}`;
-}
+import { getElfProject } from './DB/Elf';
+import { getFeb14Project } from './DB/Feb-14';
+import { getGnomesProject } from './DB/Gnomes';
+import { getGoodNightEarthProject } from './DB/Good-Night-Earth';
+import { getGoodNightSleepyPlanetsProject } from './DB/Good-Night-Sleepy-Planets';
+import { getHappyBirthday28Project } from './DB/Happy-Birthday-28';
+import { getLearningProject } from './DB/Learning';
+import { getPoemsProject } from './DB/Poems';
+import { getWhereAreWavesFromProject } from './DB/Where-Are-Waves-From';
 
 export function getProjects(): IProject[] {
   return [
@@ -53,9 +36,9 @@ export function getProjects(): IProject[] {
     getGoodNightEarthProject(),
     getDifferencesGirlTeaTimeProject(),
     getGoodNightSleepyPlanetsProject(),
-    getDifferencesGirlProject(),
+    // getDifferencesGirlProject(),
     getDifferencesGirlSwimProject(),
-    getMendeleevProject(),
+    // getMendeleevProject(),
     getPoemsProject(),
     // getMermaidVsPlasticProject(),
     getPiratesProject(),
@@ -63,15 +46,15 @@ export function getProjects(): IProject[] {
     getBabyBookProject(),
     getBedtimeStoriesForKids2Project(),
     getBearHousesProject(),
-    getLookAtSpaceProject(),
-    getVisitingNaturesheetProject(),
-    getBedtimeStoriesForKidsProject(),
+    // getLookAtSpaceProject(),
+    // getVisitingNaturesheetProject(),
+    // getBedtimeStoriesForKidsProject(),
     // getEatWithTeaProject(),
     // getInTheForestProject(),
-    getWhatIsHappinessProject(),
-    getDeepDiveProject(),
-    getChristmas2022Project(),
-    getHolidayComesToUsProject(),
+    // getWhatIsHappinessProject(),
+    // getDeepDiveProject(),
+    // getChristmas2022Project(),
+    // getHolidayComesToUsProject(),
     getChristmas2021Project(),
     getSamovarProject(),
     // {
@@ -85,39 +68,39 @@ export function getProjects(): IProject[] {
     //     },
     //   ],
     // },
-    {
-      id: 'Shaggy-Creeper',
-      title: TranslateService.localize('project.Shaggy-Creeper.title'),
-      tags: [EProjectTag.magazine],
-      description: `
-        ${getUpsideDownMagazineDescription()}
-        <p>
-            Мохнатую ползучку <br>
-            Я в садике нашла. <br>
-            Мохнатую ползучку <br>
-            В ладошку я взяла. <br>
-            Вокруг жужжали пчёлы, <br>
-            Летала стрекоза. <br>
-            Ползучке посмотрела <br>
-            Я в чёрные глаза. <br>
-            И в них прочла: <br>
-            «Не надо тащить меня домой. <br>
-            Тебе я очень рада, <br>
-            Но быть хочу живой!» <br>
-            Теперь гуляет где-то <br>
-            В берёзовых лесах <br>
-            Мохнатая ползучка <br>
-            О двадцати ногах.
-        </p>
-    `,
-      figures: [
-        {
-          src: getPath('Shaggy-Creeper/1.jpg'),
-        },
-      ],
-    },
-    getTheBeatlesProject(),
-    getTheMiracleBeastProject(),
+    // {
+    //   id: 'Shaggy-Creeper',
+    //   title: TranslateService.localize('project.Shaggy-Creeper.title'),
+    //   tags: [EProjectTag.magazine],
+    //   description: `
+    //     ${getUpsideDownMagazineDescription()}
+    //     <p>
+    //         Мохнатую ползучку <br>
+    //         Я в садике нашла. <br>
+    //         Мохнатую ползучку <br>
+    //         В ладошку я взяла. <br>
+    //         Вокруг жужжали пчёлы, <br>
+    //         Летала стрекоза. <br>
+    //         Ползучке посмотрела <br>
+    //         Я в чёрные глаза. <br>
+    //         И в них прочла: <br>
+    //         «Не надо тащить меня домой. <br>
+    //         Тебе я очень рада, <br>
+    //         Но быть хочу живой!» <br>
+    //         Теперь гуляет где-то <br>
+    //         В берёзовых лесах <br>
+    //         Мохнатая ползучка <br>
+    //         О двадцати ногах.
+    //     </p>
+    // `,
+    //   figures: [
+    //     {
+    //       src: getPath('Shaggy-Creeper/1.jpg'),
+    //     },
+    //   ],
+    // },
+    // getTheBeatlesProject(),
+    // getTheMiracleBeastProject(),
     // {
     //   id: 'Karaoke',
     //   title: TranslateService.localize('project.Karaoke.title'),

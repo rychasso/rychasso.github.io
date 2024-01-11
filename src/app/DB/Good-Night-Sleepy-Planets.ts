@@ -15,7 +15,7 @@ export const getGoodNightSleepyPlanetsProject: () => IProject = () => ({
     {
       src: getSrc('cover.jpg'),
     },
-    ...[1, 2, 3, 4, 5, 9, 10, 12, 13, 17, 20].map((id) => ({
+    ...[1, 2, 3, 4, 5, 9, 10, 12, 13].map((id) => ({
       src: getSrc(`${id}.jpg`),
     })),
   ],
