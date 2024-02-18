@@ -43,6 +43,12 @@ b, strong {
 }
 
 .typography {
+  > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+
   p, ul {
     margin-bottom: 1em;
   }
@@ -81,5 +87,8 @@ b, strong {
   img {
     margin-bottom: 1em;
     display: block; // for margins collapsing
+
+    padding-left: 0;
+    padding-right: 0;
   }
 }
