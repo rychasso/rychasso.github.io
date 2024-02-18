@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LocaleInitializerGuard } from '@i18n/locale-initializer.guard';
+import { LocaleInitializer } from '@i18n/locale-initializer';
 import { AppLayoutComponent } from '@modules/layout';
 
 const routes: Routes = [
   {
     path: '',
-    canActivate: [LocaleInitializerGuard],
+    canActivate: [LocaleInitializer],
     component: AppLayoutComponent,
     children: [
       {
