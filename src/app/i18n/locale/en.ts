@@ -4,6 +4,7 @@ import ru, {
   menu as menuRu,
   projects as projectsRu,
   tags as tagsRu,
+  phrases as phrasesRu
 } from './ru';
 
 const nouns: typeof nounsRu = {
@@ -12,6 +13,10 @@ const nouns: typeof nounsRu = {
   'count-иллюстраций': '{$count} illustrations',
 };
 const actions: typeof actionsRu = {};
+
+export const phrases: typeof phrasesRu = {
+  maintenance: "Site will get back soon with new stunning drawings! Send an email to rychass@yandex.ru to reach me."
+};
 
 export const tags: typeof tagsRu = {
   'tag.characters': 'Characters',
@@ -111,6 +116,7 @@ const locales: typeof ru = {
   ...actions,
   ...menu,
   ...projects,
+  ...phrases
 };
 
 export default locales;

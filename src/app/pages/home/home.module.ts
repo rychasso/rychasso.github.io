@@ -7,10 +7,11 @@ import { HomeProjectsResolver } from './home-projects.resolver';
 import { ProjectListItemComponent } from './project-list-item/project-list-item.component';
 import { IconModule } from '@modules/icon';
 import { HomeProjectsByTagResolver } from './home-projects-by-tag.resolver';
+import { TranslateModule } from '@i18n/translate.module';
 
 @NgModule({
   declarations: [HomeComponent, ProjectListItemComponent],
-  imports: [CommonModule, RouterModule.forChild(routes), IconModule],
+  imports: [CommonModule, RouterModule.forChild(routes), IconModule, TranslateModule],
   providers: [HomeProjectsResolver, HomeProjectsByTagResolver],
 })
 export class HomeModule {}

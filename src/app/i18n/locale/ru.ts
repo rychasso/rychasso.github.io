@@ -6,6 +6,10 @@ export const nouns = {
 
 export const actions = {};
 
+export const phrases = {
+  maintenance: "Сайт скоро снова заработает и дополнится потрясающими картинками! Напишите мне на rychasso@yandex.ru чтобы связаться со мной."
+};
+
 export const tags = {
   'tag.characters': 'Персонажи',
   'tag.magazine': 'Журнал',
@@ -102,6 +106,7 @@ const locale = {
   ...actions,
   ...menu,
   ...projects,
+  ...phrases
 };
 
 export default locale;
