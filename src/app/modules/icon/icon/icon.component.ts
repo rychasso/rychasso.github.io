@@ -29,11 +29,14 @@ export class IconComponent implements OnChanges {
   }
 
   private loadIcon(iconName: TIcon): Promise<{ default: string } | null> {
-    return import(
-      /* webpackChunkName: "icon-[request]" */ `!!raw-loader!./icons/${iconName}.svg`
-    ).catch((err) => {
-      console.error(err);
-      return null;
-    });
+    return fetch(`/assets/icons/${iconName}.svg`)
+      .then((res) => res.text())
+      .then((text) => ({
+        default: text,
+      }))
+      .catch((err) => {
+        console.error(err);
+        return null;
+      });
   }
 }
