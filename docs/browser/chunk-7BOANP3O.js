@@ -1,0 +1,1 @@
+import{j as o}from"./chunk-OODB2EFT.js";var l=(()=>{class t{static localize(r,e={}){let c=[`:@@${r}:`];Object.keys(e).forEach(a=>{c.push(`:${a}:`)});let i=Object.assign(c,{raw:c});return $localize(i,...Object.values(e))}static{this.\u0275fac=function(e){return new(e||t)}}static{this.\u0275prov=o({token:t,factory:t.\u0275fac,providedIn:"root"})}}return t})();export{l as a};

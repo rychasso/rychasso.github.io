@@ -1,0 +1,1 @@
+var t=function(r){return r.character="character",r.books="books",r.magazine="magazine",r.postcards="postcards",r.packing="packing",r}(t||{});function n(r){return r.figures.map(a=>e(a)?a.src:null).filter(a=>!!a)[0]}function e(r){return"src"in r}function c(r){return"multipleSrc"in r}export{t as a,n as b,e as c,c as d};
