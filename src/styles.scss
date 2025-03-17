@@ -1,7 +1,7 @@
-@import "theme";
+@use "theme";
 
-@import "./styles/core/typography";
-@import "./styles/components/link";
+@use "./styles/core/typography";
+@use "./styles/components/link";
 
 /* You can add global styles to this file, and also import other style files */
 html {

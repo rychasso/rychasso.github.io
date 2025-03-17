@@ -10,6 +10,7 @@ import { TranslateService } from '@i18n/translate.service';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  standalone: false,
 })
 export class HomeComponent implements OnInit {
   public readonly project$: Observable<IProject[]> = this.route.data.pipe(map((d) => d.projects));

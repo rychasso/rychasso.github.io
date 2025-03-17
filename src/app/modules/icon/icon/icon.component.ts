@@ -10,6 +10,7 @@ export type TIcon = 'behance' | 'images' | 'telegram' | 'email';
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class IconComponent implements OnChanges {
   @Input() name: TIcon = 'email';

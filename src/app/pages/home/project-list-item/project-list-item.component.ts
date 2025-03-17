@@ -7,6 +7,7 @@ import { TranslateService } from '@i18n/translate.service';
   templateUrl: './project-list-item.component.html',
   styleUrls: ['./project-list-item.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class ProjectListItemComponent {
   @Input() project!: IProject;
