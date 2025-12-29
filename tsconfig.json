@@ -21,6 +21,9 @@
       "dom"
     ],
     "paths": {
+      "@lib/*": [
+        "src/app/lib/*"
+      ],
       "@models/*": [
         "src/app/models/*"
       ],

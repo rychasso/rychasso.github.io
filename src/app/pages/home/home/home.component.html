@@ -1,10 +1,10 @@
-<!-- <ul class="grid">
-  <li *ngFor="let project of project$ | async">
+<ul #container [@fade]="'active'">
+  <li *ngFor="let project of project$ | async; let i = index" [style]="{ animationDelay: i * 0.075 + 's'}">
     <a [routerLink]="['/projects', project.id]">
       <app-project-list-item [project]="project"></app-project-list-item>
     </a>
   </li>
 </ul>
- -->
 
- <p class="maintenance">{{'maintenance' | translate}}</p>
+
+ <!-- <p class="maintenance">{{'maintenance' | translate}}</p> -->

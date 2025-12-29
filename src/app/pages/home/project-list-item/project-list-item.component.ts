@@ -13,11 +13,7 @@ export class ProjectListItemComponent {
   @Input() project!: IProject;
 
   get posterUrl(): string | null {
-    if (this.project.posterSrc) {
-      return this.project.posterSrc;
-    }
-
-    return getProjectFirstImage(this.project) || null;
+    return getProjectFirstImage(this.project) || this.project.posterSrc || null;
   }
 
   getTagLocalization(tag: EProjectTag): string {
